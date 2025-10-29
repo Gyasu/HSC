@@ -1,5 +1,5 @@
-from constraintometer.utils.genetic_code import GENETIC_CODE
-from constraintometer.utils.trinucleotide_context_rates import MUTATION_RATES_UNIQUE
+from hsc.utils.genetic_code import GENETIC_CODE
+from hsc.utils.trinucleotide_context_rates import MUTATION_RATES_UNIQUE
 import numpy as np
 
 def count_codon_ns(codon):
@@ -238,11 +238,12 @@ def permute_variants_dist(m, length, p=None, dist=None, n=10000):
                 result = 1 - MAF
             else:
                 result = MAF
-            
-            # result = 1 / (2 * MAF * (1 - MAF))**(-1)
 
-            v[s] += result
-            # v[s] += 1
+            result_log = np.log10(result)
+            
+
+            v[s] += result_log
+
         missense_matrix.append(v)
     return np.stack(missense_matrix)
 

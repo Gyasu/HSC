@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# example command:
+#python hsc/main_final.py -c config.json -i all_uniprots/split_69.txt -l hsc.log 
 
 import csv
 import gzip
@@ -12,7 +14,7 @@ from collections import defaultdict
 from tqdm import tqdm
 import numpy as np
 
-#from biopython
+# from biopython
 from Bio import SeqIO
 from Bio import BiopythonWarning
 from Bio.PDB import PDBParser, is_aa
@@ -28,31 +30,41 @@ warnings.simplefilter('ignore', BiopythonWarning)
 
 def parse_cmd():
     """
+    Parse command-line arguments for computing HSC scores.
 
     Returns
     -------
-
+    argparse.Namespace
+        Parsed arguments including config file, input file, radius, database,
+        overwrite flag, verbosity, and log file.
     """
     parser = ArgumentParser()
-    parser.add_argument('-c', '--config', dest='config', required=True,
-                        type=str, help='A JSON file specifying options.')
-    parser.add_argument('-i', '--input', dest='input', required=True,
-                        type=str, help='''Ensembl transcript ID of the 
-                        transcript for which to compute a MTR3D profile.''')
-    parser.add_argument('-w', '--overwrite', dest='overwrite', required=False,
-                        action='store_true', help='''Whether to overwrite 
-                        already computed MTR3D scores.''')
-    parser.add_argument('-r', '--radius', dest='radius', type=float, default=8,
-                        help='''Radius within which to include sites.''')
-    parser.add_argument('-d', '--database', dest='database', required=True,
-                       default='SWISS-MODEL', help='Structure database to be used.')
-    parser.add_argument('-v', '--verbose', dest='verbose', required=False,
-                        action='store_true', help='''Whether to output verbose
-                        data: number of contacting residues and number of 
-                        missense and synonymous variants in the neighborhood
-                        of the mutation site.''')
-    parser.add_argument('-l', '--log', dest='log', default='cosmis.log',
-                        help='''The file to which to write detailed computing logs.''')
+    
+    parser.add_argument(
+        '-c', '--config', dest='config', required=True,
+        type=str, help='A JSON file specifying options.'
+    )
+    parser.add_argument(
+        '-i', '--input', dest='input', required=True,
+        type=str, help='Input file specifying the UniProt ID and PDB file, e.g., "P13929 AF-P13929-F1-model_v4.pdb".'
+    ) 
+    parser.add_argument(
+        '-w', '--overwrite', dest='overwrite', required=False,
+        action='store_true', help='Whether to overwrite already computed HSC scores.'
+    )
+    parser.add_argument(
+        '-r', '--radius', dest='radius', type=float, default=8,
+        help='Radius within which to include sites.'
+    )
+    parser.add_argument(
+        '-v', '--verbose', dest='verbose', required=False,
+        action='store_true', help='Whether to output verbose data, including number of contacting residues and variants in the neighborhood.'
+    )
+    parser.add_argument(
+        '-l', '--log', dest='log', default='hsc.log',
+        help='The file to which to write detailed computing logs.'
+    )
+    
     return parser.parse_args()
 
 def get_ensembl_accession(record):
@@ -173,7 +185,7 @@ def count_variants(variants):
         variants and one dictionary for synonymous variants.
 
     """
-    #
+
     missense_counts = defaultdict(int)
     synonymous_counts = defaultdict(int)
     for variant in variants:
@@ -181,24 +193,18 @@ def count_variants(variants):
         count = int(variant[1])
         AN = int(variant[2])
 
-        MAF = (count / AN) #* 100
+        MAF = (count / AN) 
 
         if MAF > 0.5:
             result = 1 - MAF
         else:
             result = MAF
-        # result = 1 / (2 * MAF * (1 - MAF))**(-1)
-        
-
-        # print(f'MAF is {MAF} and result is {result}')
-        
+                
         w = vv[0]  # wild-type amino acid
         v = vv[-1]  # mutant amino acid
         pos = vv[1:-1]  # position in the protein sequence
         
-        # only consider rare variants
-        # if int(ac) / int(an) > 0.001: 
-        #    continue
+
         if w != v:  # missense variant
             missense_counts[int(pos)] += result
         else:  # synonymous variant
@@ -217,50 +223,73 @@ class NoRecordInDictionaryError(KeyError):
 class NoVariantsError(KeyError):
     pass
 
-def retrieve_data(uniprot_id, enst_ids, pep_dict, cds_dict, variant_dict):
+def retrieve_data(pep_seq, uniprot_id, enst_ids, cds_dict, variant_dict):
     """
-    """
-    pep_seq = pep_dict[uniprot_id]
+    Retrieve the coding sequence (CDS) and variant information for a given 
+    UniProt ID, matching it with valid Ensembl transcript(s).
 
-    valid_ensts = []
+    Parameters
+    ----------
+    pep_seq : str
+        Protein sequence corresponding to the UniProt ID.
+    uniprot_id : str
+        UniProt identifier.
+    enst_ids : list of str
+        List of Ensembl transcript IDs associated with the UniProt ID.
+    cds_dict : dict
+        Dictionary mapping Ensembl transcript IDs to CDS SeqRecords.
+    variant_dict : dict
+        Dictionary mapping Ensembl transcript IDs to variant data.
+
+    Returns
+    -------
+    enst_id : str
+        Selected Ensembl transcript ID.
+    cds_seq : str
+        Coding DNA sequence corresponding to the selected transcript.
+    variants : list or dict
+        Variant data associated with the selected transcript.
+    """
+
+    # Filter valid transcripts
+    valid_transcripts = []
     for enst_id in enst_ids:
         cds_seq = cds_dict[enst_id].seq
-        # skip if the CDS is incomplete
         if not seq_utils.is_valid_cds(cds_seq):
-            print('Error: Invalid CDS.'.format(enst_id))
+            print(f"Warning: Invalid CDS for transcript {enst_id}. Skipping.")
             continue
+        # Check if protein and CDS length are compatible
         if len(pep_seq) == len(cds_seq) // 3 - 1:
-            valid_ensts.append(enst_id)
-    if not valid_ensts:
-        raise ValueError(
-            'Error: {} are not compatible with {}.'.format(enst_ids, uniprot_id)
-        )
+            valid_transcripts.append(enst_id)
 
-    if len(valid_ensts) == 1:
-        enst_id = valid_ensts[0]
-        cds = cds_dict[enst_id].seq
-        if enst_id not in variant_dict.keys():
-           raise KeyError('Error: No record for {} in gnomAD.'.format(uniprot_id))
+    if not valid_transcripts:
+        raise ValueError(f"Error: No valid transcripts compatible with UniProt ID {uniprot_id}: {enst_ids}")
+
+    # If only one valid transcript, return it
+    if len(valid_transcripts) == 1:
+        enst_id = valid_transcripts[0]
+        cds_seq = cds_dict[enst_id].seq
+        if enst_id not in variant_dict:
+            raise KeyError(f"Error: No variant record for {uniprot_id} in gnomAD.")
         variants = variant_dict[enst_id]['variants']
-        return enst_id, pep_seq, cds, variants
+        return enst_id, cds_seq, variants
 
-    # if multiple transcripts are valid
-    # get the one with most variable positions
-    max_len = 0
-    right_enst = ''
-    for enst_id in valid_ensts:
-        try:
-            var_pos = len(variant_dict[enst_id]['variants'])
-        except KeyError:
-            continue
-        if max_len < var_pos:
-            max_len = var_pos
-            right_enst = enst_id
-    cds = cds_dict[right_enst].seq
-    variants = variant_dict[right_enst]['variants']
+    # If multiple valid transcripts, select the one with the most variant positions
+    selected_transcript = None
+    max_variants = -1
+    for enst_id in valid_transcripts:
+        num_variants = len(variant_dict.get(enst_id, {}).get('variants', []))
+        if num_variants > max_variants:
+            max_variants = num_variants
+            selected_transcript = enst_id
 
-    return right_enst, pep_seq, cds, variants
+    if selected_transcript is None:
+        raise KeyError(f"Error: None of the valid transcripts have variant data for UniProt ID {uniprot_id}.")
 
+    cds_seq = cds_dict[selected_transcript].seq
+    variants = variant_dict[selected_transcript]['variants']
+
+    return selected_transcript, cds_seq, variants
 
 
 def get_dataset_headers():
@@ -287,59 +316,47 @@ def get_dataset_headers():
 
 def load_datasets(configs):
     """
+    Load all required datasets for computing HSC scores.
 
     Parameters
     ----------
-    configs
+    configs : dict
+        Dictionary containing file paths for the required datasets:
+        - 'ensembl_cds': path to ENSEMBL CDS fasta (gzipped)
+        - 'uniprot_pep': path to UniProt peptide fasta (gzipped)
+        - 'gnomad_variants': path to gnomAD transcript-level variants (JSON)
+        - 'uniprot_to_enst': path to UniProt-to-Ensembl mapping file (JSON)
+        - 'enst_mp_counts': path to transcript mutation probability and counts
 
     Returns
     -------
-
+    tuple
+        (enst_cds_dict, pep_dict, enst_variants, uniprot_to_enst, enst_mp_counts)
     """
-    # ENSEMBL cds
-    print('Reading ENSEMBL CDS database ...')
+    
+    # Load ENSEMBL CDS sequences
+    print('Loading ENSEMBL CDS sequences...')
     with gzip.open(configs['ensembl_cds'], 'rt') as cds_handle:
         enst_cds_dict = SeqIO.to_dict(
             SeqIO.parse(cds_handle, format='fasta'),
             key_function=get_ensembl_accession
         )
-        
-    # ENSEMBL peptide sequences
-    print('Reading UniProt protein sequence database ...')
-    with gzip.open(configs['uniprot_pep'], 'rt') as pep_handle:
-        pep_dict = SeqIO.to_dict(
-            SeqIO.parse(pep_handle, format='fasta'),
-            key_function=get_uniprot_accession
-        )
-    
-    # Parse gnomad transcript-level variants
-    print('Reading gnomAD variant database ...')
+
+    # Load gnomAD transcript-level variants
+    print('Loading gnomAD variant database...')
     with open(configs['gnomad_variants'], 'rt') as variant_handle:
-        # transcript_variants will be a dict of dicts where major version
-        # ENSEMBL transcript IDs are the first level keys and "ccds", "ensp",
-        # "swissprot", "variants" are the second level keys. The value of each
-        # second-level key is a Python list.
         enst_variants = json.load(variant_handle)
-    '''
-    print('Reading RGC variant database ...')
-    with open(configs['RGC_variants'], 'rt') as RGC_variant_handle:
-        # transcript_variants will be a dict of dicts where major version
-        # ENSEMBL transcript IDs are the first level keys and "ccds", "ensp",
-        # "swissprot", "variants" are the second level keys. The value of each
-        # second-level key is a Python list.
-        enst_variants = json.load(RGC_variant_handle)
-    '''
-    # parse the file that maps Ensembl transcript IDs to PDB IDs
-    print('Reading uniprot to ENST mapping file ...')
-    with open(configs['uniprot_to_enst'], 'rt') as ipf:
-        uniprot_to_enst = json.load(ipf)
 
+    # Load UniProt-to-Ensembl transcript mapping
+    print('Loading UniProt to ENST mapping...')
+    with open(configs['uniprot_to_enst'], 'rt') as map_handle:
+        uniprot_to_enst = json.load(map_handle)
 
-    # get transcript mutation probabilities and variant counts
-    print('Reading transcript mutation probabilities and variant counts ...')
+    # Load transcript mutation probabilities and variant counts
+    print('Loading transcript mutation probabilities and variant counts...')
     enst_mp_counts = seq_utils.read_enst_mp_count_dist(configs['enst_mp_counts'])
 
-    return (enst_cds_dict, pep_dict, enst_variants, uniprot_to_enst, enst_mp_counts)
+    return enst_cds_dict, enst_variants, uniprot_to_enst, enst_mp_counts
 
 def get_pep_seq_from_pdb(pdb_file, pdb_chain):
     if pdb_file.endswith('.gz'):
@@ -377,33 +394,40 @@ def main():
     configs = parse_config(args.config)
 
     # Load datasets
-    cds_dict, pep_dict, variant_dict, uniprot_to_enst, enst_mp_counts = load_datasets(configs)
+    cds_dict, variant_dict, uniprot_to_enst, enst_mp_counts = load_datasets(configs)
 
     # directory where to store the output files
     output_dir = os.path.abspath(configs['output_dir'])
 
-    # read UniProt ID to swiss model mapping
-    with open(args.input, 'rt') as ipf:
-        uniprot_sm_mapping = [line.strip().split() for line in ipf]
+    # Read UniProt ID and AlphaFold PDB mapping
+    with open(args.input, 'rt') as mapping_file:
+        uniprot_pdb_pairs = [line.strip().split() for line in mapping_file]
+    
+    # Error counters
+    no_enst_for_uniprot = 0
+    no_valid_cds = 0
+    no_variant_data = 0
+    bad_structure = 0
+    no_enst_mp = 0
 
-    # compute constraint scores
-    for uniprot_id, model_path in uniprot_sm_mapping:
-        logging.info(f"Checking for {uniprot_id} and {model_path}")
-        print(uniprot_id)
-        if args.database == 'SWISS-MODEL':
-            pdb_file = os.path.join(configs['pdb_dir'], model_path)
-            pdb_chain = model_path.split('.')[-2]
-        else:
-            pdb_file = os.path.join(configs['pdb_dir'], model_path) + '.gz'
-            pdb_chain = 'A'
-            pep_seq = get_pep_seq_from_pdb(pdb_file, pdb_chain)
-        if os.path.exists(
-                os.path.join(output_dir, uniprot_id + '_cosmis.tsv')
-        ) and not args.overwrite:
-            logging.info(f"{uniprot_id}_cosmis.tsv already exists. Skipped.")
+    # Compute HSC scores for each UniProt-PDB pair
+    for uniprot_id, pdb_model_name in uniprot_pdb_pairs:
+        logging.info(f"Processing {uniprot_id} with model {pdb_model_name}")
+        print(f"Processing {uniprot_id}...")
+
+        # Determine PDB file path and chain
+        pdb_file = os.path.join(configs['pdb_dir'], pdb_model_name)
+        pdb_chain = 'A'
+
+        pep_seq = get_pep_seq_from_pdb(pdb_file, pdb_chain)
+
+        # Skip computation if output already exists and overwrite is not set
+        output_file = os.path.join(output_dir, f"{uniprot_id}_hsc.tsv")
+        if os.path.exists(output_file) and not args.overwrite:
+            logging.info(f"{uniprot_id}_hsc.tsv already exists. Skipping.")
             continue
-        
-        cosmis = []
+
+        hsc_scores = []
 
         try:
             enst_ids = uniprot_to_enst[uniprot_id]
@@ -411,21 +435,24 @@ def main():
             logging.critical(
                 'No ENST transcript IDs were mapped to {}.'.format(uniprot_id)
             )
+            no_enst_for_uniprot += 1
             continue
 
         try:
-            right_enst, pep_seq, cds, variants = retrieve_data(
-                uniprot_id, enst_ids, pep_dict, cds_dict, variant_dict
+            right_enst, cds, variants = retrieve_data(
+                pep_seq, uniprot_id, enst_ids, cds_dict, variant_dict
             )
         except ValueError:
             logging.critical('No valid CDS found for {}.'.format(uniprot_id))
+            no_valid_cds += 1
             continue
         except KeyError:
             logging.critical('No transcript record found for {} in gnomAD.'.format(uniprot_id))
+            no_variant_data += 1
             continue
 
         # print message
-        logging.info(f"Computing COSMIS features for: {uniprot_id}, {right_enst}, {pdb_file}")
+        logging.info(f"Computing HSC features for: {uniprot_id}, {right_enst}, {pdb_file}")
 
         chain = get_pdb_chain(pdb_file, pdb_chain)
 
@@ -435,26 +462,28 @@ def main():
             print('Skip to the next protein ...')
             continue
 
-        if args.database == 'AlphaFold':
-            # exclude residues that are of very low confidence, i.e. pLDDT < 50
-            all_aa_residues = [
-                aa for aa in chain.get_residues()
-                if is_aa(aa, standard=True)
-            ]
-            if len(all_aa_residues) / len(pep_seq) < 1.0 / 3.0:
-                logging.critical(
-                    'Confident residues in AlphaFold2 model cover less than '
-                    'one third of the peptide sequence: {} {}.'.format(uniprot_id, pdb_file)
-                )
-                continue
-        else:
-            all_aa_residues = [aa for aa in chain.get_residues() if is_aa(aa, standard=True)]
+        
+        all_aa_residues = [
+            aa for aa in chain.get_residues()
+            if is_aa(aa, standard=True)
+        ]
+            
+        if len(all_aa_residues) / len(pep_seq) < 1.0 / 3.0:
+            logging.critical(
+                'Confident residues in AlphaFold2 model cover less than '
+                'one third of the peptide sequence: {} {}.'.format(uniprot_id, pdb_file)
+            )
+            bad_structure += 1
+            continue
+        
         if not all_aa_residues:
             logging.critical(
                 'No confident residues found in the given structure'
                 '{} for {}.'.format(pdb_file, uniprot_id)
             )
+            bad_structure += 1
             continue
+        
         all_contacts = pdb_utils.search_for_all_contacts(
             all_aa_residues, radius=args.radius
         )
@@ -467,12 +496,11 @@ def main():
 
         if len(codon_mutation_rates) < len(all_aa_residues):
             print('ERROR: peptide sequence has less residues than structure!')
+            bad_structure += 1
             print('Skip to the next protein ...')
             continue
 
-        # tabulate variants at each site
-        # missense_counts and synonymous_counts are dictionary that maps
-        # amino acid positions to variant counts
+
         missense_counts, synonymous_counts = count_variants(variants)
 
 
@@ -494,7 +522,9 @@ def main():
             # logging.info(f'this is mis_dist {mis_dist}')
         except KeyError:
             logging.critical('Transcript {} not found in {}'.format(right_enst, configs[
-                'enst_mp_counts']))        
+                'enst_mp_counts']))
+            no_enst_mp += 1
+            continue        
 
         # permutation test
         codon_mis_probs = [x[1] for x in codon_mutation_rates]
@@ -532,14 +562,8 @@ def main():
                 print('Skip to the next protein ...')
                 valid_case = False
                 break
-
-            if args.database == 'AlphaFold':
-                plddt = res['CA'].get_bfactor()
-            else:
-                plddt = 100
-            # if plddt < 50:
-            #     # skip residues of very low confidence
-            #     continue
+                
+            plddt = res['CA'].get_bfactor()
 
             contact_res = indexed_contacts[res]
             num_contacts = len(contact_res)
@@ -592,15 +616,18 @@ def main():
                 continue
             gc_fraction = seq_utils.gc_content(seq_context)
 
-            mis_pmt_mean, mis_pmt_sd, mis_p_value, mis_pmt_mean_log, mis_pmt_sd_log = seq_utils.get_permutation_stats_log(
+            total_missense_obs = np.log10(total_missense_obs + 1e-12)
+            total_synonymous_obs = np.log10(total_synonymous_obs + 1e-12)
+
+            mis_pmt_mean, mis_pmt_sd, mis_p_value = seq_utils.get_permutation_stats(
                 mis_pmt_matrix, contacts_pdb_pos + [seq_pos], total_missense_obs
             )
-            syn_pmt_mean, syn_pmt_sd, syn_p_value, syn_pmt_mean_log, syn_pmt_sd_log = seq_utils.get_permutation_stats_log(
+            syn_pmt_mean, syn_pmt_sd, syn_p_value = seq_utils.get_permutation_stats(
                 syn_pmt_matrix, contacts_pdb_pos + [seq_pos], total_synonymous_obs
             )
 
             # compute the fraction of expected missense variants
-            cosmis.append(
+            hsc_scores.append(
                 [
                     uniprot_id, right_enst, seq_pos, seq_aa, seq_seps,
                     num_contacts + 1,
@@ -617,7 +644,7 @@ def main():
                     total_missense_obs,
                     mis_pmt_mean,
                     mis_pmt_sd,
-                    '{:.3f}'.format((total_missense_obs - mis_pmt_mean) / mis_pmt_sd),  # Added cosmis calculation
+                    '{:.3f}'.format((total_missense_obs - mis_pmt_mean) / mis_pmt_sd),  
                     '{:.3e}'.format(mis_p_value),
                     '{:.3f}'.format(syn_pmt_mean),
                     '{:.3f}'.format(syn_pmt_sd),
@@ -635,14 +662,14 @@ def main():
             continue
 
         with open(
-                file=os.path.join(output_dir, uniprot_id + '_cosmis.tsv'),
+                file=os.path.join(output_dir, uniprot_id + '_hsc.tsv'),
                 mode='wt'
         ) as opf:
             csv_writer = csv.writer(opf, delimiter='\t')
             csv_writer.writerow(get_dataset_headers())
-            csv_writer.writerows(cosmis)
+            csv_writer.writerows(hsc_scores)
 
-        logging.info(f'Successfully computed COSMIS for {uniprot_id}!')
+        logging.info(f'Successfully computed HSC for {uniprot_id}!')
 
 if __name__ == '__main__':
     main()
