@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+	"flit_core >=3.2,<4",
+	"python_version >= '3.9'"
+]
+build-backend = "flit_core.buildapi"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[project]
+name = "constraintometer"
+authors = [{name = "Gyasu Bajracharya", email = "gyasu.bajracharya@ucsf.edu"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "pytest",
+	"numpy",
+	"scikit-learn",
+	"pandas",
+	"matplotlib",
+	"plotly",
+	"biopython",  # Added for Bio.SeqIO and BiopythonWarning
+	"tqdm"        # Added for tqdm progress bars
+]
+
+[project.urls]
+Home = "https://github.com/gyasub/comingsoon.git"
