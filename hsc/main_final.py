@@ -27,6 +27,8 @@ from hsc.utils import seq_utils, pdb_utils
 
 warnings.simplefilter('ignore', BiopythonWarning)
 
+print("imports are good")
+raise
 
 def parse_cmd():
     """
