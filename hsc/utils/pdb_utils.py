@@ -5,7 +5,7 @@ import os
 import numpy as np
 from Bio.PDB import NeighborSearch
 
-from constraintometer.utils import Contact
+from hsc.utils import Contact
 
 
 def search_for_all_contacts(residues, radius=8.0):

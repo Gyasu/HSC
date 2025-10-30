@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # example command:
-#python hsc/main_final.py -c config.json -i all_uniprots/split_69.txt -l hsc.log 
+#python -m hsc.main_final -c config.json -i all_uniprots/split_69.txt -l hsc.log 
 
 import csv
 import gzip
@@ -27,8 +27,6 @@ from hsc.utils import seq_utils, pdb_utils
 
 warnings.simplefilter('ignore', BiopythonWarning)
 
-print("imports are good")
-raise
 
 def parse_cmd():
     """
@@ -308,7 +306,7 @@ def get_dataset_headers():
         'seq_separations', 'num_contacts', 'syn_var_sites',
         'total_syn_sites', 'mis_var_sites', 'total_mis_sites',
         'cs_syn_poss', 'cs_mis_poss', 'cs_gc_content', 'cs_syn_prob',
-        'cs_syn_obs', 'cs_mis_prob', 'cs_mis_obs', 'mis_pmt_mean', 'mis_pmt_sd','cosmis',
+        'cs_syn_obs', 'cs_mis_prob', 'log_cs_mis_obs', 'log_mis_pmt_mean', 'log_mis_pmt_sd','HSCZ',
         'mis_p_value', 'syn_pmt_mean', 'syn_pmt_sd', 'syn_p_value',
         'enst_syn_obs', 'enst_mis_obs', 'enst_syn_exp', 'enst_mis_exp', 
         'plddt', 'uniprot_length'
@@ -375,16 +373,25 @@ def get_pep_seq_from_pdb(pdb_file, pdb_chain):
     return None
 
 def main():
+    
     """
+        Main pipeline for computing Human Site Constraint (HSC) scores.
+
+        Steps:
+        1. Parse arguments and configuration.
+        2. Load CDS, variant, and transcript mapping datasets.
+        3. For each UniProt–AlphaFold pair, compute per-residue constraint statistics.
+        4. Save results as a tab-separated file.
 
     Returns
     -------
-
+        None
+            Writes <uniprot_id>_hsc.tsv files to the configured output directory.
     """
-    # Parse command-line arguments
-    args = parse_cmd()
 
-    # Configure the logging system
+    args = parse_cmd()
+    configs = parse_config(args.config)
+
     logging.basicConfig(
         filename=args.log,
         level=logging.INFO,
@@ -392,35 +399,34 @@ def main():
         format='%(levelname)s:%(asctime)s:%(message)s'
     )
 
-    # Parse configuration file
-    configs = parse_config(args.config)
+    logging.info("Starting HSC computation pipeline...")
 
+    output_dir = os.path.abspath(configs['output_dir'])
+    os.makedirs(output_dir, exist_ok=True)
+
+    
     # Load datasets
     cds_dict, variant_dict, uniprot_to_enst, enst_mp_counts = load_datasets(configs)
-
-    # directory where to store the output files
-    output_dir = os.path.abspath(configs['output_dir'])
-
-    # Read UniProt ID and AlphaFold PDB mapping
+    
     with open(args.input, 'rt') as mapping_file:
         uniprot_pdb_pairs = [line.strip().split() for line in mapping_file]
     
     # Error counters
-    no_enst_for_uniprot = 0
-    no_valid_cds = 0
-    no_variant_data = 0
-    bad_structure = 0
-    no_enst_mp = 0
+    error_counts = {
+        "no_enst_for_uniprot": 0,
+        "no_valid_cds": 0,
+        "no_variant_data": 0,
+        "bad_structure": 0,
+        "no_enst_mp": 0,
+    }
 
     # Compute HSC scores for each UniProt-PDB pair
     for uniprot_id, pdb_model_name in uniprot_pdb_pairs:
         logging.info(f"Processing {uniprot_id} with model {pdb_model_name}")
-        print(f"Processing {uniprot_id}...")
 
         # Determine PDB file path and chain
-        pdb_file = os.path.join(configs['pdb_dir'], pdb_model_name)
+        pdb_file = os.path.join(configs['pdb_dir'], pdb_model_name) + '.gz'
         pdb_chain = 'A'
-
         pep_seq = get_pep_seq_from_pdb(pdb_file, pdb_chain)
 
         # Skip computation if output already exists and overwrite is not set
@@ -434,10 +440,8 @@ def main():
         try:
             enst_ids = uniprot_to_enst[uniprot_id]
         except KeyError:
-            logging.critical(
-                'No ENST transcript IDs were mapped to {}.'.format(uniprot_id)
-            )
-            no_enst_for_uniprot += 1
+            logging.error(f"No ENST transcript IDs were mapped to {uniprot_id}") 
+            error_counts['no_enst_for_uniprot'] += 1
             continue
 
         try:
@@ -445,123 +449,86 @@ def main():
                 pep_seq, uniprot_id, enst_ids, cds_dict, variant_dict
             )
         except ValueError:
-            logging.critical('No valid CDS found for {}.'.format(uniprot_id))
-            no_valid_cds += 1
-            continue
-        except KeyError:
-            logging.critical('No transcript record found for {} in gnomAD.'.format(uniprot_id))
-            no_variant_data += 1
+            logging.error(f"No valid CDS found for {uniprot_id}")
+            error_counts['no_valid_cds'] += 1
             continue
 
-        # print message
+        except KeyError:
+            logging.error(f"No transcript record found for {uniprot_id} in gnomAD.")
+            error_counts['no_variant_data'] += 1
+            continue
+
         logging.info(f"Computing HSC features for: {uniprot_id}, {right_enst}, {pdb_file}")
 
+
+
         chain = get_pdb_chain(pdb_file, pdb_chain)
-
         if chain is None:
-            print(
-                'ERROR: %s not found in structure: %s!' % (pdb_chain, pdb_file))
-            print('Skip to the next protein ...')
+            logging.warning(f"Missing chain {pdb_chain} in structure {pdb_file}. Skipping.")
+            error_counts["bad_structure"] += 1
             continue
 
         
-        all_aa_residues = [
-            aa for aa in chain.get_residues()
-            if is_aa(aa, standard=True)
-        ]
+        all_aa_residues = [aa for aa in chain.get_residues() if is_aa(aa, standard=True)]
             
-        if len(all_aa_residues) / len(pep_seq) < 1.0 / 3.0:
-            logging.critical(
-                'Confident residues in AlphaFold2 model cover less than '
-                'one third of the peptide sequence: {} {}.'.format(uniprot_id, pdb_file)
-            )
-            bad_structure += 1
+        if not all_aa_residues or len(all_aa_residues) / len(pep_seq) < 1.0 / 3.0:
+            logging.warning(f"Low-quality structure for {uniprot_id} ({pdb_model_name}). Skipping.")
+            error_counts["bad_structure"] += 1
             continue
         
-        if not all_aa_residues:
-            logging.critical(
-                'No confident residues found in the given structure'
-                '{} for {}.'.format(pdb_file, uniprot_id)
-            )
-            bad_structure += 1
-            continue
         
-        all_contacts = pdb_utils.search_for_all_contacts(
-            all_aa_residues, radius=args.radius
-        )
+        all_contacts = pdb_utils.search_for_all_contacts(all_aa_residues, radius=args.radius)
 
-        # calculate expected counts for each codon
+        indexed_contacts = defaultdict(list)
+        for c in all_contacts:
+            indexed_contacts[c.get_res_a()].append(c.get_res_b())
+            indexed_contacts[c.get_res_b()].append(c.get_res_a())
+
+
         cds = cds[:-3]  # remove the stop codon
         codon_mutation_rates = seq_utils.get_codon_mutation_rates(cds)
         all_cds_ns_counts = seq_utils.count_poss_ns_variants(cds)
         cds_ns_sites = seq_utils.count_ns_sites(cds)
 
         if len(codon_mutation_rates) < len(all_aa_residues):
-            print('ERROR: peptide sequence has less residues than structure!')
-            bad_structure += 1
-            print('Skip to the next protein ...')
+            logging.warning(f"Residue–sequence mismatch for {uniprot_id}. Skipping.")
+            error_counts["bad_structure"] += 1
             continue
 
+        mis_counts, syn_counts = count_variants(variants)
+        site_var_mis = {pos: 1 for pos in mis_counts}
+        site_var_syn = {pos: 1 for pos in syn_counts}
 
-        missense_counts, synonymous_counts = count_variants(variants)
-
-
-        # convert variant count to site variability
-        site_variability_missense = {
-            pos: 1 for pos, _ in missense_counts.items()
-        }
-        site_variability_synonymous = {
-            pos: 1 for pos, _ in synonymous_counts.items()
-        }
-
-        # compute the total number of missense variants
         try:
-            total_exp_mis_counts = enst_mp_counts[right_enst][-3]
-            total_exp_syn_counts = enst_mp_counts[right_enst][-4]
+            total_mis_exp = enst_mp_counts[right_enst][-3]
+            total_syn_exp = enst_mp_counts[right_enst][-4]
             mis_dist = enst_mp_counts[right_enst][-1]
             syn_dist = enst_mp_counts[right_enst][-2]
-          
-            # logging.info(f'this is mis_dist {mis_dist}')
         except KeyError:
-            logging.critical('Transcript {} not found in {}'.format(right_enst, configs[
-                'enst_mp_counts']))
-            no_enst_mp += 1
-            continue        
-
-        # permutation test
-        codon_mis_probs = [x[1] for x in codon_mutation_rates]
-        codon_syn_probs = [x[0] for x in codon_mutation_rates]
-        mis_p = codon_mis_probs / np.sum(codon_mis_probs)
-        syn_p = codon_syn_probs / np.sum(codon_syn_probs)
-        try:
-            mis_pmt_matrix = seq_utils.permute_variants_dist(
-                total_exp_mis_counts, len(pep_seq), mis_p, syn_dist
-            )
-            syn_pmt_matrix = seq_utils.permute_variants_dist(
-                total_exp_syn_counts, len(pep_seq), syn_p, syn_dist
-            )
-        
-        except ValueError:
-            logging.critical('Protein Length Mismatch')
+            logging.error(f"Missing ENST record in counts: {right_enst}")
+            error_counts["no_enst_mp"] += 1
             continue
+        
+        try:
+            codon_mis_probs = [x[1] for x in codon_mutation_rates]
+            codon_syn_probs = [x[0] for x in codon_mutation_rates]
+            mis_pmt_matrix = seq_utils.permute_variants_dist(total_mis_exp, len(pep_seq), codon_mis_probs, syn_dist)
+            syn_pmt_matrix = seq_utils.permute_variants_dist(total_syn_exp, len(pep_seq), codon_syn_probs, syn_dist)
+        
 
-        # index all contacts by residue ID
-        indexed_contacts = defaultdict(list)
-        for c in all_contacts:
-            indexed_contacts[c.get_res_a()].append(c.get_res_b())
-            indexed_contacts[c.get_res_b()].append(c.get_res_a())
+        except ValueError:
+            logging.error(f'Protein Length Mismatch')
+            continue
 
         valid_case = True
         for seq_pos, seq_aa in enumerate(pep_seq, start=1):
             try:
                 res = chain[seq_pos]
             except KeyError:
-                print('PDB file is missing residue:', seq_aa, 'at', seq_pos)
                 continue
-            pdb_aa = seq1(res.get_resname())
-            if seq_aa != pdb_aa:
-                print('Residue in UniProt sequence did not match that in PDB at', seq_pos)
-                print('Skip to the next protein ...')
+            
+            if seq1(res.get_resname()) != seq_aa:
+                logging.warning(f"Residue mismatch at {seq_pos} in {uniprot_id}. Skipping protein.")
                 valid_case = False
                 break
                 
@@ -574,22 +541,22 @@ def main():
                 str(x) for x in [i - seq_pos for i in contacts_pdb_pos]
             )
 
-            mis_var_sites = site_variability_missense.setdefault(seq_pos, 0)
+            mis_var_sites = site_var_mis.setdefault(seq_pos, 0)
             total_mis_sites = cds_ns_sites[seq_pos - 1][0]
-            syn_var_sites = site_variability_synonymous.setdefault(seq_pos, 0)
+            syn_var_sites = site_var_syn.setdefault(seq_pos, 0)
             total_syn_sites = cds_ns_sites[seq_pos - 1][1]
-            total_missense_obs = missense_counts.setdefault(seq_pos, 0)
-            total_synonymous_obs = synonymous_counts.setdefault(seq_pos, 0)
+            total_missense_obs = mis_counts.setdefault(seq_pos, 0)
+            total_synonymous_obs = syn_counts.setdefault(seq_pos, 0)
             total_missense_poss = all_cds_ns_counts[seq_pos - 1][0]
             total_synonyms_poss = all_cds_ns_counts[seq_pos - 1][1]
             total_synonymous_rate = codon_mutation_rates[seq_pos - 1][0]
             total_missense_rate = codon_mutation_rates[seq_pos - 1][1]
             for j in contacts_pdb_pos:
                 # count the total # observed variants in contacting residues
-                mis_var_sites += site_variability_missense.setdefault(j, 0)
-                syn_var_sites += site_variability_synonymous.setdefault(j, 0)
-                total_missense_obs += missense_counts.setdefault(j, 0)
-                total_synonymous_obs += synonymous_counts.setdefault(j, 0)
+                mis_var_sites += site_var_mis.setdefault(j, 0)
+                syn_var_sites += site_var_syn.setdefault(j, 0)
+                total_missense_obs += mis_counts.setdefault(j, 0)
+                total_synonymous_obs += syn_counts.setdefault(j, 0)
 
                 # count the total # expected variants
                 try:
@@ -653,8 +620,8 @@ def main():
                     '{:.3e}'.format(syn_p_value),
                     enst_mp_counts[right_enst][2],
                     enst_mp_counts[right_enst][4],
-                    total_exp_syn_counts,
-                    total_exp_mis_counts,
+                    total_syn_exp,
+                    total_mis_exp,
                     '{:.2f}'.format(plddt),
                     len(pep_seq)
                 ]
@@ -663,15 +630,19 @@ def main():
         if not valid_case:
             continue
 
-        with open(
-                file=os.path.join(output_dir, uniprot_id + '_hsc.tsv'),
-                mode='wt'
-        ) as opf:
-            csv_writer = csv.writer(opf, delimiter='\t')
-            csv_writer.writerow(get_dataset_headers())
-            csv_writer.writerows(hsc_scores)
+        with open(output_file, "wt") as f_out:
+            writer = csv.writer(f_out, delimiter="\t")
+            writer.writerow(get_dataset_headers())
+            writer.writerows(hsc_scores)
 
-        logging.info(f'Successfully computed HSC for {uniprot_id}!')
+        logging.info(f"Successfully computed HSC for {uniprot_id}.")
+
+
+
+    # print total errors
+    logging.info("Pipeline completed.")
+    for k, v in error_counts.items():
+        logging.info(f"{k}: {v}")
 
 if __name__ == '__main__':
     main()
