@@ -1,0 +1,147 @@
+INFO:2025-10-30 14:26:03,491:Starting HSC computation pipeline...
+INFO:2025-10-30 14:27:12,560:Processing Q2KHT3 with model AF-Q2KHT3-F1-model_v4.pdb
+INFO:2025-10-30 14:27:12,774:Computing HSC features for: Q2KHT3, ENST00000409790, ../Ntranos_Rotation/ESM-SaProt/AF-Q2KHT3-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:30:24,080:Successfully computed HSC for Q2KHT3.
+INFO:2025-10-30 14:30:24,080:Processing Q2KHT4 with model AF-Q2KHT4-F1-model_v4.pdb
+ERROR:2025-10-30 14:30:24,157:No valid CDS found for Q2KHT4
+INFO:2025-10-30 14:30:24,157:Processing Q2KJY2 with model AF-Q2KJY2-F1-model_v4.pdb
+INFO:2025-10-30 14:30:24,661:Computing HSC features for: Q2KJY2, ENST00000407071, ../Ntranos_Rotation/ESM-SaProt/AF-Q2KJY2-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:37:12,396:Successfully computed HSC for Q2KJY2.
+INFO:2025-10-30 14:37:12,396:Processing Q2L4Q9 with model AF-Q2L4Q9-F1-model_v4.pdb
+INFO:2025-10-30 14:37:12,519:Computing HSC features for: Q2L4Q9, ENST00000280606, ../Ntranos_Rotation/ESM-SaProt/AF-Q2L4Q9-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:38:36,691:Successfully computed HSC for Q2L4Q9.
+INFO:2025-10-30 14:38:36,692:Processing Q2LD37 with model AF-Q2LD37-F1-model_v4.pdb
+ERROR:2025-10-30 14:38:36,898:No valid CDS found for Q2LD37
+INFO:2025-10-30 14:38:36,898:Processing Q2M1K9 with model AF-Q2M1K9-F1-model_v4.pdb
+INFO:2025-10-30 14:38:37,062:Computing HSC features for: Q2M1K9, ENST00000561648, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M1K9-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:42:14,699:Successfully computed HSC for Q2M1K9.
+INFO:2025-10-30 14:42:14,700:Processing Q2M1P5 with model AF-Q2M1P5-F1-model_v4.pdb
+INFO:2025-10-30 14:42:15,308:Computing HSC features for: Q2M1P5, ENST00000394412, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M1P5-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:46:47,460:Successfully computed HSC for Q2M1P5.
+INFO:2025-10-30 14:46:47,460:Processing Q2M1V0 with model AF-Q2M1V0-F1-model_v4.pdb
+INFO:2025-10-30 14:46:47,780:Computing HSC features for: Q2M1V0, ENST00000308700, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M1V0-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:47:27,797:Successfully computed HSC for Q2M1V0.
+INFO:2025-10-30 14:47:27,798:Processing Q2M1Z3 with model AF-Q2M1Z3-F1-model_v4.pdb
+INFO:2025-10-30 14:47:28,093:Computing HSC features for: Q2M1Z3, ENST00000264245, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M1Z3-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:50:26,861:Successfully computed HSC for Q2M1Z3.
+INFO:2025-10-30 14:50:26,862:Processing Q2M218 with model AF-Q2M218-F1-model_v4.pdb
+INFO:2025-10-30 14:50:27,043:Computing HSC features for: Q2M218, ENST00000409324, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M218-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:51:31,138:Successfully computed HSC for Q2M218.
+INFO:2025-10-30 14:51:31,139:Processing Q2M238 with model AF-Q2M238-F1-model_v4.pdb
+ERROR:2025-10-30 14:51:31,224:No ENST transcript IDs were mapped to Q2M238
+INFO:2025-10-30 14:51:31,225:Processing Q2M243 with model AF-Q2M243-F1-model_v4.pdb
+INFO:2025-10-30 14:51:31,379:Computing HSC features for: Q2M243, ENST00000294600, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M243-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:53:13,429:Successfully computed HSC for Q2M243.
+INFO:2025-10-30 14:53:13,429:Processing Q2M296 with model AF-Q2M296-F1-model_v4.pdb
+INFO:2025-10-30 14:53:13,501:Computing HSC features for: Q2M296, ENST00000381214, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M296-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:54:21,219:Successfully computed HSC for Q2M296.
+INFO:2025-10-30 14:54:21,219:Processing Q2M2D7 with model AF-Q2M2D7-F1-model_v4.pdb
+INFO:2025-10-30 14:54:21,261:Computing HSC features for: Q2M2D7, ENST00000345096, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M2D7-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:54:50,432:Successfully computed HSC for Q2M2D7.
+INFO:2025-10-30 14:54:50,432:Processing Q2M2E3 with model AF-Q2M2E3-F1-model_v4.pdb
+INFO:2025-10-30 14:54:50,531:Computing HSC features for: Q2M2E3, ENST00000328248, ../Ntranos_Rotation/ESM-SaProt/AF-Q2M2E3-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:55:22,397:Successfully computed HSC for Q2M2E3.
+INFO:2025-10-30 14:55:22,397:Processing Q16878 with model AF-Q16878-F1-model_v4.pdb
+INFO:2025-10-30 14:55:22,460:Computing HSC features for: Q16878, ENST00000250535, ../Ntranos_Rotation/ESM-SaProt/AF-Q16878-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:55:51,385:Successfully computed HSC for Q16878.
+INFO:2025-10-30 14:55:51,385:Processing Q16880 with model AF-Q16880-F1-model_v4.pdb
+INFO:2025-10-30 14:55:51,503:Computing HSC features for: Q16880, ENST00000310836, ../Ntranos_Rotation/ESM-SaProt/AF-Q16880-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:56:56,878:Successfully computed HSC for Q16880.
+INFO:2025-10-30 14:56:56,879:Processing Q16890 with model AF-Q16890-F1-model_v4.pdb
+INFO:2025-10-30 14:56:56,948:Computing HSC features for: Q16890, ENST00000534000, ../Ntranos_Rotation/ESM-SaProt/AF-Q16890-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:57:24,304:Successfully computed HSC for Q16890.
+INFO:2025-10-30 14:57:24,304:Processing Q16891 with model AF-Q16891-F1-model_v4.pdb
+INFO:2025-10-30 14:57:24,525:Computing HSC features for: Q16891, ENST00000410111, ../Ntranos_Rotation/ESM-SaProt/AF-Q16891-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:59:16,906:Successfully computed HSC for Q16891.
+INFO:2025-10-30 14:59:16,906:Processing Q17R31 with model AF-Q17R31-F1-model_v4.pdb
+INFO:2025-10-30 14:59:16,961:Computing HSC features for: Q17R31, ENST00000366974, ../Ntranos_Rotation/ESM-SaProt/AF-Q17R31-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:59:57,437:Successfully computed HSC for Q17R31.
+INFO:2025-10-30 14:59:57,437:Processing Q17R55 with model AF-Q17R55-F1-model_v4.pdb
+INFO:2025-10-30 14:59:57,504:Computing HSC features for: Q17R55, ENST00000324675, ../Ntranos_Rotation/ESM-SaProt/AF-Q17R55-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:00:53,687:Successfully computed HSC for Q17R55.
+INFO:2025-10-30 15:00:53,687:Processing Q17R60 with model AF-Q17R60-F1-model_v4.pdb
+INFO:2025-10-30 15:00:53,814:Computing HSC features for: Q17R60, ENST00000369950, ../Ntranos_Rotation/ESM-SaProt/AF-Q17R60-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:19,836:Successfully computed HSC for Q17R60.
+INFO:2025-10-30 15:03:19,836:Processing Q17R89 with model AF-Q17R89-F1-model_v4.pdb
+INFO:2025-10-30 15:03:19,959:Computing HSC features for: Q17R89, ENST00000379672, ../Ntranos_Rotation/ESM-SaProt/AF-Q17R89-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:05:19,936:Successfully computed HSC for Q17R89.
+INFO:2025-10-30 15:05:19,936:Processing Q17R98 with model AF-Q17R98-F1-model_v4.pdb
+INFO:2025-10-30 15:05:20,090:Computing HSC features for: Q17R98, ENST00000508784, ../Ntranos_Rotation/ESM-SaProt/AF-Q17R98-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:08:13,346:Successfully computed HSC for Q17R98.
+INFO:2025-10-30 15:08:13,346:Processing Q17RA5 with model AF-Q17RA5-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:13,385:No ENST transcript IDs were mapped to Q17RA5
+INFO:2025-10-30 15:08:13,385:Processing Q17RB0 with model AF-Q17RB0-F1-model_v4.pdb
+INFO:2025-10-30 15:08:13,434:Computing HSC features for: Q17RB0, ENST00000391440, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RB0-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:08:44,535:Successfully computed HSC for Q17RB0.
+INFO:2025-10-30 15:08:44,535:Processing Q17RB8 with model AF-Q17RB8-F1-model_v4.pdb
+INFO:2025-10-30 15:08:44,664:Computing HSC features for: Q17RB8, ENST00000398246, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RB8-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:11:34,654:Successfully computed HSC for Q17RB8.
+INFO:2025-10-30 15:11:34,655:Processing Q17RC7 with model AF-Q17RC7-F1-model_v4.pdb
+ERROR:2025-10-30 15:11:34,816:No transcript record found for Q17RC7 in gnomAD.
+INFO:2025-10-30 15:11:34,816:Processing Q17RD7 with model AF-Q17RD7-F1-model_v4.pdb
+ERROR:2025-10-30 15:11:35,220:No transcript record found for Q17RD7 in gnomAD.
+INFO:2025-10-30 15:11:35,220:Processing Q17RF5 with model AF-Q17RF5-F1-model_v4.pdb
+INFO:2025-10-30 15:11:35,286:Computing HSC features for: Q17RF5, ENST00000311623, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RF5-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:11:58,668:Successfully computed HSC for Q17RF5.
+INFO:2025-10-30 15:11:58,668:Processing Q17RG1 with model AF-Q17RG1-F1-model_v4.pdb
+INFO:2025-10-30 15:11:58,873:Computing HSC features for: Q17RG1, ENST00000304372, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RG1-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:13:56,900:Successfully computed HSC for Q17RG1.
+INFO:2025-10-30 15:13:56,900:Processing Q17RH7 with model AF-Q17RH7-F1-model_v4.pdb
+ERROR:2025-10-30 15:13:56,971:No ENST transcript IDs were mapped to Q17RH7
+INFO:2025-10-30 15:13:56,971:Processing Q17RM4 with model AF-Q17RM4-F1-model_v4.pdb
+INFO:2025-10-30 15:13:57,133:Computing HSC features for: Q17RM4, ENST00000393965, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RM4-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:16:09,706:Successfully computed HSC for Q17RM4.
+INFO:2025-10-30 15:16:09,706:Processing Q17RN3 with model AF-Q17RN3-F1-model_v4.pdb
+INFO:2025-10-30 15:16:09,775:Computing HSC features for: Q17RN3, ENST00000252530, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RN3-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:17:42,145:Successfully computed HSC for Q17RN3.
+INFO:2025-10-30 15:17:42,145:Processing Q17RP2 with model AF-Q17RP2-F1-model_v4.pdb
+INFO:2025-10-30 15:17:42,225:Computing HSC features for: Q17RP2, ENST00000296736, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RP2-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:18:51,730:Successfully computed HSC for Q17RP2.
+INFO:2025-10-30 15:18:51,730:Processing Q17RQ9 with model AF-Q17RQ9-F1-model_v4.pdb
+INFO:2025-10-30 15:18:51,868:Computing HSC features for: Q17RQ9, ENST00000589776, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RQ9-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:21:34,385:Successfully computed HSC for Q17RQ9.
+INFO:2025-10-30 15:21:34,385:Processing Q17RR3 with model AF-Q17RR3-F1-model_v4.pdb
+INFO:2025-10-30 15:21:34,461:Computing HSC features for: Q17RR3, ENST00000369230, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RR3-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:22:30,085:Successfully computed HSC for Q17RR3.
+INFO:2025-10-30 15:22:30,085:Processing Q17RS7 with model AF-Q17RS7-F1-model_v4.pdb
+INFO:2025-10-30 15:22:30,313:Computing HSC features for: Q17RS7, ENST00000317402, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RS7-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:24:16,734:Successfully computed HSC for Q17RS7.
+INFO:2025-10-30 15:24:16,734:Processing Q17RW2 with model AF-Q17RW2-F1-model_v4.pdb
+INFO:2025-10-30 15:24:17,063:Computing HSC features for: Q17RW2, ENST00000370571, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RW2-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:27:44,272:Successfully computed HSC for Q17RW2.
+INFO:2025-10-30 15:27:44,273:Processing Q17RY0 with model AF-Q17RY0-F1-model_v4.pdb
+INFO:2025-10-30 15:27:44,418:Computing HSC features for: Q17RY0, ENST00000265085, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RY0-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:29:14,697:Successfully computed HSC for Q17RY0.
+INFO:2025-10-30 15:29:14,697:Processing Q17RY6 with model AF-Q17RY6-F1-model_v4.pdb
+INFO:2025-10-30 15:29:14,746:Computing HSC features for: Q17RY6, ENST00000292430, ../Ntranos_Rotation/ESM-SaProt/AF-Q17RY6-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:29:39,964:Successfully computed HSC for Q17RY6.
+INFO:2025-10-30 15:29:39,964:Processing Q18PE1 with model AF-Q18PE1-F1-model_v4.pdb
+INFO:2025-10-30 15:29:40,368:Computing HSC features for: Q18PE1, ENST00000340083, ../Ntranos_Rotation/ESM-SaProt/AF-Q18PE1-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:31:58,252:Successfully computed HSC for Q18PE1.
+INFO:2025-10-30 15:31:58,252:Processing Q19AV6 with model AF-Q19AV6-F1-model_v4.pdb
+INFO:2025-10-30 15:31:58,347:Computing HSC features for: Q19AV6, ENST00000399277, ../Ntranos_Rotation/ESM-SaProt/AF-Q19AV6-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:32:20,384:Successfully computed HSC for Q19AV6.
+INFO:2025-10-30 15:32:20,384:Processing Q19T08 with model AF-Q19T08-F1-model_v4.pdb
+ERROR:2025-10-30 15:32:20,426:No transcript record found for Q19T08 in gnomAD.
+INFO:2025-10-30 15:32:20,426:Processing Q1A5X6 with model AF-Q1A5X6-F1-model_v4.pdb
+INFO:2025-10-30 15:32:20,469:Computing HSC features for: Q1A5X6, ENST00000451172, ../Ntranos_Rotation/ESM-SaProt/AF-Q1A5X6-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:32:37,773:Successfully computed HSC for Q1A5X6.
+INFO:2025-10-30 15:32:37,773:Processing Q1A5X7 with model AF-Q1A5X7-F1-model_v4.pdb
+ERROR:2025-10-30 15:32:37,813:No ENST transcript IDs were mapped to Q1A5X7
+INFO:2025-10-30 15:32:37,813:Processing Q1AE95 with model AF-Q1AE95-F1-model_v4.pdb
+ERROR:2025-10-30 15:32:37,935:No ENST transcript IDs were mapped to Q1AE95
+INFO:2025-10-30 15:32:37,935:Processing Q1ED39 with model AF-Q1ED39-F1-model_v4.pdb
+INFO:2025-10-30 15:32:38,073:Computing HSC features for: Q1ED39, ENST00000219837, ../Ntranos_Rotation/ESM-SaProt/AF-Q1ED39-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:34:06,724:Successfully computed HSC for Q1ED39.
+INFO:2025-10-30 15:34:06,724:Processing Q1EHB4 with model AF-Q1EHB4-F1-model_v4.pdb
+INFO:2025-10-30 15:34:07,234:Computing HSC features for: Q1EHB4, ENST00000396005, ../Ntranos_Rotation/ESM-SaProt/AF-Q1EHB4-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:35:21,447:Successfully computed HSC for Q1EHB4.
+INFO:2025-10-30 15:35:21,447:Processing Q1HG43 with model AF-Q1HG43-F1-model_v4.pdb
+INFO:2025-10-30 15:35:21,543:Computing HSC features for: Q1HG43, ENST00000560572, ../Ntranos_Rotation/ESM-SaProt/AF-Q1HG43-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:36:08,404:Successfully computed HSC for Q1HG43.
+INFO:2025-10-30 15:36:08,404:Pipeline completed.
+INFO:2025-10-30 15:36:08,404:no_enst_for_uniprot: 5
+INFO:2025-10-30 15:36:08,404:no_valid_cds: 2
+INFO:2025-10-30 15:36:08,404:no_variant_data: 3
+INFO:2025-10-30 15:36:08,404:bad_structure: 0
+INFO:2025-10-30 15:36:08,404:no_enst_mp: 0

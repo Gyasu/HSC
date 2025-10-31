@@ -11,8 +11,8 @@ pythonpath = [
 ]
 
 [project]
-name = "constraintometer"
-authors = [{name = "Gyasu Bajracharya", email = "gyasu.bajracharya@ucsf.edu"}]
+name = "hsc"
+authors = [{name = "Gyasu Bajracharya", email = "gyasu@outlook.com"}]
 readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
@@ -24,9 +24,9 @@ dependencies = [
 	"pandas",
 	"matplotlib",
 	"plotly",
-	"biopython",  # Added for Bio.SeqIO and BiopythonWarning
-	"tqdm"        # Added for tqdm progress bars
+	"biopython",  
+	"tqdm"        
 ]
 
 [project.urls]
-Home = "https://github.com/gyasub/comingsoon.git"
+Home = "https://github.com/gyasu/HSC.git"

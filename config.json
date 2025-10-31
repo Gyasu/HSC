@@ -4,6 +4,6 @@
     "gnomad_variants": "datafiles/gnomad_variant_counts_hg38.json",
     "uniprot_to_enst": "datafiles/uniprot_to_enst_mapping.json",
     "enst_mp_counts": "datafiles/gnomad_prob_AFdist_exp.tsv",
-    "output_dir": "outputs/",
+    "output_dir": "outputs/HSC_8",
     "pdb_dir": "../Ntranos_Rotation/ESM-SaProt/"
 }

@@ -1,0 +1,109 @@
+INFO:2025-10-30 14:25:02,637:Starting HSC computation pipeline...
+INFO:2025-10-30 14:25:53,175:Processing A0A0G2JQF1 with model AF-A0A0G2JQF1-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,207:No valid CDS found for A0A0G2JQF1
+INFO:2025-10-30 14:25:53,208:Processing A0A0G2JQZ4 with model AF-A0A0G2JQZ4-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,252:No valid CDS found for A0A0G2JQZ4
+INFO:2025-10-30 14:25:53,252:Processing A0A0G2JRQ6 with model AF-A0A0G2JRQ6-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,299:No valid CDS found for A0A0G2JRQ6
+INFO:2025-10-30 14:25:53,300:Processing A0A0G2JS06 with model AF-A0A0G2JS06-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,355:No ENST transcript IDs were mapped to A0A0G2JS06
+INFO:2025-10-30 14:25:53,355:Processing A0A0J9YVY3 with model AF-A0A0J9YVY3-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,392:No valid CDS found for A0A0J9YVY3
+INFO:2025-10-30 14:25:53,392:Processing A0A0J9YW62 with model AF-A0A0J9YW62-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,430:No valid CDS found for A0A0J9YW62
+INFO:2025-10-30 14:25:53,430:Processing A0A0J9YWL9 with model AF-A0A0J9YWL9-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,625:No transcript record found for A0A0J9YWL9 in gnomAD.
+INFO:2025-10-30 14:25:53,625:Processing A0A0J9YWP8 with model AF-A0A0J9YWP8-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,649:No valid CDS found for A0A0J9YWP8
+INFO:2025-10-30 14:25:53,649:Processing A0A0J9YWU9 with model AF-A0A0J9YWU9-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,716:No valid CDS found for A0A0J9YWU9
+INFO:2025-10-30 14:25:53,716:Processing A0A0J9YWX3 with model AF-A0A0J9YWX3-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,723:No valid CDS found for A0A0J9YWX3
+INFO:2025-10-30 14:25:53,723:Processing A0A0J9YX35 with model AF-A0A0J9YX35-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,741:No valid CDS found for A0A0J9YX35
+INFO:2025-10-30 14:25:53,741:Processing A0A0J9YX57 with model AF-A0A0J9YX57-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,813:No transcript record found for A0A0J9YX57 in gnomAD.
+INFO:2025-10-30 14:25:53,813:Processing A0A0J9YX75 with model AF-A0A0J9YX75-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,851:No ENST transcript IDs were mapped to A0A0J9YX75
+INFO:2025-10-30 14:25:53,851:Processing A0A0J9YX94 with model AF-A0A0J9YX94-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,952:No transcript record found for A0A0J9YX94 in gnomAD.
+INFO:2025-10-30 14:25:53,953:Processing A0A0J9YXG5 with model AF-A0A0J9YXG5-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,969:No valid CDS found for A0A0J9YXG5
+INFO:2025-10-30 14:25:53,969:Processing A0A0J9YXM7 with model AF-A0A0J9YXM7-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:53,975:No valid CDS found for A0A0J9YXM7
+INFO:2025-10-30 14:25:53,975:Processing A0A0J9YXQ4 with model AF-A0A0J9YXQ4-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,072:No transcript record found for A0A0J9YXQ4 in gnomAD.
+INFO:2025-10-30 14:25:54,073:Processing A0A0J9YXV3 with model AF-A0A0J9YXV3-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,156:No transcript record found for A0A0J9YXV3 in gnomAD.
+INFO:2025-10-30 14:25:54,157:Processing A0A0J9YXX1 with model AF-A0A0J9YXX1-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,187:No valid CDS found for A0A0J9YXX1
+INFO:2025-10-30 14:25:54,187:Processing A0A0J9YXY3 with model AF-A0A0J9YXY3-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,231:No valid CDS found for A0A0J9YXY3
+INFO:2025-10-30 14:25:54,231:Processing A0A0J9YY54 with model AF-A0A0J9YY54-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,336:No transcript record found for A0A0J9YY54 in gnomAD.
+INFO:2025-10-30 14:25:54,336:Processing A0A0J9YY99 with model AF-A0A0J9YY99-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,483:No valid CDS found for A0A0J9YY99
+INFO:2025-10-30 14:25:54,483:Processing A0A0K0K1A3 with model AF-A0A0K0K1A3-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,517:No valid CDS found for A0A0K0K1A3
+INFO:2025-10-30 14:25:54,518:Processing A0A0K0K1A5 with model AF-A0A0K0K1A5-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,555:No valid CDS found for A0A0K0K1A5
+INFO:2025-10-30 14:25:54,555:Processing A0A0K0K1B3 with model AF-A0A0K0K1B3-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,593:No valid CDS found for A0A0K0K1B3
+INFO:2025-10-30 14:25:54,593:Processing A0A0K0K1C0 with model AF-A0A0K0K1C0-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,641:No valid CDS found for A0A0K0K1C0
+INFO:2025-10-30 14:25:54,641:Processing A0A0K0K1C4 with model AF-A0A0K0K1C4-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,681:No valid CDS found for A0A0K0K1C4
+INFO:2025-10-30 14:25:54,681:Processing A0A0K0K1D8 with model AF-A0A0K0K1D8-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,766:No valid CDS found for A0A0K0K1D8
+INFO:2025-10-30 14:25:54,766:Processing A0A0K0K1E9 with model AF-A0A0K0K1E9-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,794:No valid CDS found for A0A0K0K1E9
+INFO:2025-10-30 14:25:54,794:Processing A0A0K0K1G6 with model AF-A0A0K0K1G6-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,842:No valid CDS found for A0A0K0K1G6
+INFO:2025-10-30 14:25:54,842:Processing A0A0K0K1G8 with model AF-A0A0K0K1G8-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,879:No valid CDS found for A0A0K0K1G8
+INFO:2025-10-30 14:25:54,879:Processing A0A0K2S4Q6 with model AF-A0A0K2S4Q6-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:54,926:No transcript record found for A0A0K2S4Q6 in gnomAD.
+INFO:2025-10-30 14:25:54,926:Processing A0A0M3HER8 with model AF-A0A0M3HER8-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,160:No transcript record found for A0A0M3HER8 in gnomAD.
+INFO:2025-10-30 14:25:55,160:Processing A0A0U1RQE8 with model AF-A0A0U1RQE8-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,233:No transcript record found for A0A0U1RQE8 in gnomAD.
+INFO:2025-10-30 14:25:55,233:Processing A0A0U1RQF7 with model AF-A0A0U1RQF7-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,253:No transcript record found for A0A0U1RQF7 in gnomAD.
+INFO:2025-10-30 14:25:55,253:Processing A0A0U1RQG5 with model AF-A0A0U1RQG5-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,326:No transcript record found for A0A0U1RQG5 in gnomAD.
+INFO:2025-10-30 14:25:55,326:Processing A0A0U1RQI7 with model AF-A0A0U1RQI7-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,476:No transcript record found for A0A0U1RQI7 in gnomAD.
+INFO:2025-10-30 14:25:55,476:Processing A0A0U1RQS6 with model AF-A0A0U1RQS6-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,528:No transcript record found for A0A0U1RQS6 in gnomAD.
+INFO:2025-10-30 14:25:55,528:Processing A0A0U1RR11 with model AF-A0A0U1RR11-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,583:No transcript record found for A0A0U1RR11 in gnomAD.
+INFO:2025-10-30 14:25:55,583:Processing A0A0U1RR37 with model AF-A0A0U1RR37-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,647:No transcript record found for A0A0U1RR37 in gnomAD.
+INFO:2025-10-30 14:25:55,647:Processing A0A0U1RRA0 with model AF-A0A0U1RRA0-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,706:No transcript record found for A0A0U1RRA0 in gnomAD.
+INFO:2025-10-30 14:25:55,706:Processing A0A0U1RRE5 with model AF-A0A0U1RRE5-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,730:No transcript record found for A0A0U1RRE5 in gnomAD.
+INFO:2025-10-30 14:25:55,730:Processing A0A0U1RRI6 with model AF-A0A0U1RRI6-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,804:No valid CDS found for A0A0U1RRI6
+INFO:2025-10-30 14:25:55,804:Processing A0A0U1RRK4 with model AF-A0A0U1RRK4-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,938:No transcript record found for A0A0U1RRK4 in gnomAD.
+INFO:2025-10-30 14:25:55,938:Processing A0A0U1RRL7 with model AF-A0A0U1RRL7-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:55,967:No transcript record found for A0A0U1RRL7 in gnomAD.
+INFO:2025-10-30 14:25:55,967:Processing A0A0U1RRN3 with model AF-A0A0U1RRN3-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:56,000:No transcript record found for A0A0U1RRN3 in gnomAD.
+INFO:2025-10-30 14:25:56,000:Processing A0A0X1KG70 with model AF-A0A0X1KG70-F1-model_v4.pdb
+INFO:2025-10-30 14:25:56,065:Computing HSC features for: A0A0X1KG70, ENST00000332663, ../Ntranos_Rotation/ESM-SaProt/AF-A0A0X1KG70-F1-model_v4.pdb.gz
+ERROR:2025-10-30 14:25:56,164:Missing ENST record in counts: ENST00000332663
+INFO:2025-10-30 14:25:56,164:Processing A0A126GWB0 with model AF-A0A126GWB0-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:56,239:No valid CDS found for A0A126GWB0
+INFO:2025-10-30 14:25:56,239:Processing A0A126GWI2 with model AF-A0A126GWI2-F1-model_v4.pdb
+ERROR:2025-10-30 14:25:56,335:No valid CDS found for A0A126GWI2
+INFO:2025-10-30 14:25:56,335:Processing A0A140G945 with model AF-A0A140G945-F1-model_v4.pdb
+INFO:2025-10-30 14:25:56,372:Computing HSC features for: A0A140G945, ENST00000291554, ../Ntranos_Rotation/ESM-SaProt/AF-A0A140G945-F1-model_v4.pdb.gz
+ERROR:2025-10-30 14:25:56,417:Missing ENST record in counts: ENST00000291554
+INFO:2025-10-30 14:25:56,417:Pipeline completed.
+INFO:2025-10-30 14:25:56,417:no_enst_for_uniprot: 2
+INFO:2025-10-30 14:25:56,417:no_valid_cds: 26
+INFO:2025-10-30 14:25:56,417:no_variant_data: 20
+INFO:2025-10-30 14:25:56,417:bad_structure: 0
+INFO:2025-10-30 14:25:56,417:no_enst_mp: 2

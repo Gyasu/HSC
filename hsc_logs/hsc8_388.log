@@ -1,0 +1,127 @@
+INFO:2025-10-30 14:59:04,102:Starting HSC computation pipeline...
+INFO:2025-10-30 15:00:09,441:Processing P01303 with model AF-P01303-F1-model_v4.pdb
+INFO:2025-10-30 15:00:09,504:Computing HSC features for: P01303, ENST00000242152, ../Ntranos_Rotation/ESM-SaProt/AF-P01303-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:00:28,056:Successfully computed HSC for P01303.
+INFO:2025-10-30 15:00:28,056:Processing P01308 with model AF-P01308-F1-model_v4.pdb
+INFO:2025-10-30 15:00:28,114:Computing HSC features for: P01308, ENST00000250971, ../Ntranos_Rotation/ESM-SaProt/AF-P01308-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:00:39,954:Successfully computed HSC for P01308.
+INFO:2025-10-30 15:00:39,955:Processing P01344 with model AF-P01344-F1-model_v4.pdb
+ERROR:2025-10-30 15:00:39,998:No transcript record found for P01344 in gnomAD.
+INFO:2025-10-30 15:00:39,998:Processing P01350 with model AF-P01350-F1-model_v4.pdb
+INFO:2025-10-30 15:00:40,053:Computing HSC features for: P01350, ENST00000329402, ../Ntranos_Rotation/ESM-SaProt/AF-P01350-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:00:50,307:Successfully computed HSC for P01350.
+INFO:2025-10-30 15:00:50,308:Processing P01374 with model AF-P01374-F1-model_v4.pdb
+INFO:2025-10-30 15:00:50,412:Computing HSC features for: P01374, ENST00000418386, ../Ntranos_Rotation/ESM-SaProt/AF-P01374-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:01:13,787:Successfully computed HSC for P01374.
+INFO:2025-10-30 15:01:13,787:Processing P01375 with model AF-P01375-F1-model_v4.pdb
+INFO:2025-10-30 15:01:13,852:Computing HSC features for: P01375, ENST00000449264, ../Ntranos_Rotation/ESM-SaProt/AF-P01375-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:01:38,426:Successfully computed HSC for P01375.
+INFO:2025-10-30 15:01:38,426:Processing P01562 with model AF-P01562-F1-model_v4.pdb
+INFO:2025-10-30 15:01:38,483:Computing HSC features for: P01562, ENST00000449498, ../Ntranos_Rotation/ESM-SaProt/AF-P01562-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:02:00,134:Successfully computed HSC for P01562.
+INFO:2025-10-30 15:02:00,134:Processing P01563 with model AF-P01563-F1-model_v4.pdb
+INFO:2025-10-30 15:02:00,209:Computing HSC features for: P01563, ENST00000380206, ../Ntranos_Rotation/ESM-SaProt/AF-P01563-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:02:19,516:Successfully computed HSC for P01563.
+INFO:2025-10-30 15:02:19,516:Processing P01566 with model AF-P01566-F1-model_v4.pdb
+INFO:2025-10-30 15:02:19,589:Computing HSC features for: P01566, ENST00000357374, ../Ntranos_Rotation/ESM-SaProt/AF-P01566-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:02:40,528:Successfully computed HSC for P01566.
+INFO:2025-10-30 15:02:40,529:Processing P01567 with model AF-P01567-F1-model_v4.pdb
+INFO:2025-10-30 15:02:40,587:Computing HSC features for: P01567, ENST00000239347, ../Ntranos_Rotation/ESM-SaProt/AF-P01567-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:01,536:Successfully computed HSC for P01567.
+INFO:2025-10-30 15:03:01,536:Processing P01568 with model AF-P01568-F1-model_v4.pdb
+INFO:2025-10-30 15:03:01,612:Computing HSC features for: P01568, ENST00000380225, ../Ntranos_Rotation/ESM-SaProt/AF-P01568-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:22,294:Successfully computed HSC for P01568.
+INFO:2025-10-30 15:03:22,294:Processing P01569 with model AF-P01569-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:22,388:No transcript record found for P01569 in gnomAD.
+INFO:2025-10-30 15:03:22,388:Processing P01570 with model AF-P01570-F1-model_v4.pdb
+INFO:2025-10-30 15:03:22,452:Computing HSC features for: P01570, ENST00000380222, ../Ntranos_Rotation/ESM-SaProt/AF-P01570-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:41,887:Successfully computed HSC for P01570.
+INFO:2025-10-30 15:03:41,887:Processing P01571 with model AF-P01571-F1-model_v4.pdb
+INFO:2025-10-30 15:03:41,946:Computing HSC features for: P01571, ENST00000413767, ../Ntranos_Rotation/ESM-SaProt/AF-P01571-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:04:01,573:Successfully computed HSC for P01571.
+INFO:2025-10-30 15:04:01,573:Processing P01574 with model AF-P01574-F1-model_v4.pdb
+INFO:2025-10-30 15:04:01,643:Computing HSC features for: P01574, ENST00000380232, ../Ntranos_Rotation/ESM-SaProt/AF-P01574-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:04:22,136:Successfully computed HSC for P01574.
+INFO:2025-10-30 15:04:22,136:Processing P01579 with model AF-P01579-F1-model_v4.pdb
+INFO:2025-10-30 15:04:22,201:Computing HSC features for: P01579, ENST00000229135, ../Ntranos_Rotation/ESM-SaProt/AF-P01579-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:04:42,872:Successfully computed HSC for P01579.
+INFO:2025-10-30 15:04:42,872:Processing P01583 with model AF-P01583-F1-model_v4.pdb
+INFO:2025-10-30 15:04:42,947:Computing HSC features for: P01583, ENST00000263339, ../Ntranos_Rotation/ESM-SaProt/AF-P01583-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:05:06,139:Successfully computed HSC for P01583.
+INFO:2025-10-30 15:05:06,139:Processing P01584 with model AF-P01584-F1-model_v4.pdb
+INFO:2025-10-30 15:05:06,212:Computing HSC features for: P01584, ENST00000263341, ../Ntranos_Rotation/ESM-SaProt/AF-P01584-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:05:29,167:Successfully computed HSC for P01584.
+INFO:2025-10-30 15:05:29,167:Processing P01588 with model AF-P01588-F1-model_v4.pdb
+INFO:2025-10-30 15:05:29,258:Computing HSC features for: P01588, ENST00000252723, ../Ntranos_Rotation/ESM-SaProt/AF-P01588-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:06:00,120:Successfully computed HSC for P01588.
+INFO:2025-10-30 15:06:00,121:Processing P01589 with model AF-P01589-F1-model_v4.pdb
+INFO:2025-10-30 15:06:00,215:Computing HSC features for: P01589, ENST00000379959, ../Ntranos_Rotation/ESM-SaProt/AF-P01589-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:06:32,796:Successfully computed HSC for P01589.
+INFO:2025-10-30 15:06:32,796:Processing P01591 with model AF-P01591-F1-model_v4.pdb
+INFO:2025-10-30 15:06:32,831:Computing HSC features for: P01591, ENST00000254801, ../Ntranos_Rotation/ESM-SaProt/AF-P01591-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:06:45,812:Successfully computed HSC for P01591.
+INFO:2025-10-30 15:06:45,812:Processing P01593 with model AF-P01593-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:45,875:No valid CDS found for P01593
+INFO:2025-10-30 15:06:45,875:Processing P01594 with model AF-P01594-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:45,922:No valid CDS found for P01594
+INFO:2025-10-30 15:06:45,922:Processing P01597 with model AF-P01597-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:45,975:No valid CDS found for P01597
+INFO:2025-10-30 15:06:45,975:Processing P01599 with model AF-P01599-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,022:No valid CDS found for P01599
+INFO:2025-10-30 15:06:46,022:Processing P01601 with model AF-P01601-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,070:No valid CDS found for P01601
+INFO:2025-10-30 15:06:46,070:Processing P01602 with model AF-P01602-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,121:No valid CDS found for P01602
+INFO:2025-10-30 15:06:46,122:Processing P01611 with model AF-P01611-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,177:No valid CDS found for P01611
+INFO:2025-10-30 15:06:46,177:Processing P01614 with model AF-P01614-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,214:No valid CDS found for P01614
+INFO:2025-10-30 15:06:46,214:Processing P01615 with model AF-P01615-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,255:No valid CDS found for P01615
+INFO:2025-10-30 15:06:46,255:Processing P01619 with model AF-P01619-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,307:No valid CDS found for P01619
+INFO:2025-10-30 15:06:46,307:Processing P01624 with model AF-P01624-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,355:No valid CDS found for P01624
+INFO:2025-10-30 15:06:46,355:Processing P01699 with model AF-P01699-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,394:No valid CDS found for P01699
+INFO:2025-10-30 15:06:46,394:Processing P01700 with model AF-P01700-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,438:No valid CDS found for P01700
+INFO:2025-10-30 15:06:46,438:Processing P01701 with model AF-P01701-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,477:No valid CDS found for P01701
+INFO:2025-10-30 15:06:46,477:Processing P01703 with model AF-P01703-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,522:No valid CDS found for P01703
+INFO:2025-10-30 15:06:46,522:Processing P01704 with model AF-P01704-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,561:No valid CDS found for P01704
+INFO:2025-10-30 15:06:46,561:Processing P01705 with model AF-P01705-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,597:No valid CDS found for P01705
+INFO:2025-10-30 15:06:46,597:Processing P01706 with model AF-P01706-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,635:No valid CDS found for P01706
+INFO:2025-10-30 15:06:46,635:Processing P01709 with model AF-P01709-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,672:No valid CDS found for P01709
+INFO:2025-10-30 15:06:46,672:Processing P01714 with model AF-P01714-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,710:No valid CDS found for P01714
+INFO:2025-10-30 15:06:46,710:Processing P01715 with model AF-P01715-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,748:No valid CDS found for P01715
+INFO:2025-10-30 15:06:46,748:Processing P01717 with model AF-P01717-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,784:No valid CDS found for P01717
+INFO:2025-10-30 15:06:46,784:Processing P01718 with model AF-P01718-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,832:No valid CDS found for P01718
+INFO:2025-10-30 15:06:46,832:Processing P01721 with model AF-P01721-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:46,866:No valid CDS found for P01721
+INFO:2025-10-30 15:06:46,866:Processing P01730 with model AF-P01730-F1-model_v4.pdb
+INFO:2025-10-30 15:06:46,982:Computing HSC features for: P01730, ENST00000011653, ../Ntranos_Rotation/ESM-SaProt/AF-P01730-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:07:27,186:Successfully computed HSC for P01730.
+INFO:2025-10-30 15:07:27,186:Processing P01732 with model AF-P01732-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:27,250:No transcript record found for P01732 in gnomAD.
+INFO:2025-10-30 15:07:27,251:Processing P01733 with model AF-P01733-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:27,299:No valid CDS found for P01733
+INFO:2025-10-30 15:07:27,299:Processing P01737 with model AF-P01737-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:27,352:No valid CDS found for P01737
+INFO:2025-10-30 15:07:27,352:Processing P01742 with model AF-P01742-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:27,409:No valid CDS found for P01742
+INFO:2025-10-30 15:07:27,409:Pipeline completed.
+INFO:2025-10-30 15:07:27,409:no_enst_for_uniprot: 0
+INFO:2025-10-30 15:07:27,409:no_valid_cds: 27
+INFO:2025-10-30 15:07:27,409:no_variant_data: 3
+INFO:2025-10-30 15:07:27,409:bad_structure: 0
+INFO:2025-10-30 15:07:27,409:no_enst_mp: 0

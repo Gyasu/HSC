@@ -1,0 +1,117 @@
+INFO:2025-10-30 15:01:00,917:Starting HSC computation pipeline...
+INFO:2025-10-30 15:01:55,946:Processing P0DMM9 with model AF-P0DMM9-F1-model_v4.pdb
+INFO:2025-10-30 15:01:56,050:Computing HSC features for: P0DMM9, ENST00000338971, ../Ntranos_Rotation/ESM-SaProt/AF-P0DMM9-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:02:41,387:Successfully computed HSC for P0DMM9.
+INFO:2025-10-30 15:02:41,387:Processing P0DMN0 with model AF-P0DMN0-F1-model_v4.pdb
+INFO:2025-10-30 15:02:41,512:Computing HSC features for: P0DMN0, ENST00000360423, ../Ntranos_Rotation/ESM-SaProt/AF-P0DMN0-F1-model_v4.pdb.gz
+ERROR:2025-10-30 15:02:41,627:Missing ENST record in counts: ENST00000360423
+INFO:2025-10-30 15:02:41,627:Processing P0DMP1 with model AF-P0DMP1-F1-model_v4.pdb
+ERROR:2025-10-30 15:02:41,791:No ENST transcript IDs were mapped to P0DMP1
+INFO:2025-10-30 15:02:41,792:Processing P0DMP2 with model AF-P0DMP2-F1-model_v4.pdb
+ERROR:2025-10-30 15:02:41,905:No transcript record found for P0DMP2 in gnomAD.
+INFO:2025-10-30 15:02:41,905:Processing P0DMQ5 with model AF-P0DMQ5-F1-model_v4.pdb
+ERROR:2025-10-30 15:02:42,058:No transcript record found for P0DMQ5 in gnomAD.
+INFO:2025-10-30 15:02:42,058:Processing P0DMQ9 with model AF-P0DMQ9-F1-model_v4.pdb
+ERROR:2025-10-30 15:02:42,101:No transcript record found for P0DMQ9 in gnomAD.
+INFO:2025-10-30 15:02:42,101:Processing P0DMR1 with model AF-P0DMR1-F1-model_v4.pdb
+ERROR:2025-10-30 15:02:42,176:No transcript record found for P0DMR1 in gnomAD.
+INFO:2025-10-30 15:02:42,177:Processing P0DMR2 with model AF-P0DMR2-F1-model_v4.pdb
+ERROR:2025-10-30 15:02:42,246:No transcript record found for P0DMR2 in gnomAD.
+INFO:2025-10-30 15:02:42,246:Processing P0DMR3 with model AF-P0DMR3-F1-model_v4.pdb
+ERROR:2025-10-30 15:02:42,341:No ENST transcript IDs were mapped to P0DMR3
+INFO:2025-10-30 15:02:42,342:Processing P0DMS8 with model AF-P0DMS8-F1-model_v4.pdb
+INFO:2025-10-30 15:02:42,458:Computing HSC features for: P0DMS8, ENST00000241356, ../Ntranos_Rotation/ESM-SaProt/AF-P0DMS8-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:20,927:Successfully computed HSC for P0DMS8.
+INFO:2025-10-30 15:03:20,927:Processing P0DMS9 with model AF-P0DMS9-F1-model_v4.pdb
+INFO:2025-10-30 15:03:21,017:Computing HSC features for: P0DMS9, ENST00000369717, ../Ntranos_Rotation/ESM-SaProt/AF-P0DMS9-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:53,683:Successfully computed HSC for P0DMS9.
+INFO:2025-10-30 15:03:53,684:Processing P0DMT0 with model AF-P0DMT0-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:53,793:No transcript record found for P0DMT0 in gnomAD.
+INFO:2025-10-30 15:03:53,793:Processing P0DMU2 with model AF-P0DMU2-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:53,891:No ENST transcript IDs were mapped to P0DMU2
+INFO:2025-10-30 15:03:53,891:Processing P0DMU3 with model AF-P0DMU3-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:53,988:No ENST transcript IDs were mapped to P0DMU3
+INFO:2025-10-30 15:03:53,988:Processing P0DMU7 with model AF-P0DMU7-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:54,045:No transcript record found for P0DMU7 in gnomAD.
+INFO:2025-10-30 15:03:54,045:Processing P0DMU8 with model AF-P0DMU8-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:54,115:No transcript record found for P0DMU8 in gnomAD.
+INFO:2025-10-30 15:03:54,115:Processing P0DMU9 with model AF-P0DMU9-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:54,173:No transcript record found for P0DMU9 in gnomAD.
+INFO:2025-10-30 15:03:54,173:Processing P0DMV0 with model AF-P0DMV0-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:54,235:No transcript record found for P0DMV0 in gnomAD.
+INFO:2025-10-30 15:03:54,235:Processing P0DMV1 with model AF-P0DMV1-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:54,279:No transcript record found for P0DMV1 in gnomAD.
+INFO:2025-10-30 15:03:54,279:Processing P0DMV2 with model AF-P0DMV2-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:54,348:No transcript record found for P0DMV2 in gnomAD.
+INFO:2025-10-30 15:03:54,348:Processing P0DMV8 with model AF-P0DMV8-F1-model_v4.pdb
+INFO:2025-10-30 15:03:54,482:Computing HSC features for: P0DMV8, ENST00000375651, ../Ntranos_Rotation/ESM-SaProt/AF-P0DMV8-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:05:54,801:Successfully computed HSC for P0DMV8.
+INFO:2025-10-30 15:05:54,801:Processing P0DMV9 with model AF-P0DMV9-F1-model_v4.pdb
+INFO:2025-10-30 15:05:55,050:Computing HSC features for: P0DMV9, ENST00000375650, ../Ntranos_Rotation/ESM-SaProt/AF-P0DMV9-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:07:13,039:Successfully computed HSC for P0DMV9.
+INFO:2025-10-30 15:07:13,039:Processing P0DMW2 with model AF-P0DMW2-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:13,076:No transcript record found for P0DMW2 in gnomAD.
+INFO:2025-10-30 15:07:13,077:Processing P0DMW3 with model AF-P0DMW3-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:13,151:No transcript record found for P0DMW3 in gnomAD.
+INFO:2025-10-30 15:07:13,151:Processing P0DMW4 with model AF-P0DMW4-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:13,185:No transcript record found for P0DMW4 in gnomAD.
+INFO:2025-10-30 15:07:13,186:Processing P0DMW5 with model AF-P0DMW5-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:13,216:No transcript record found for P0DMW5 in gnomAD.
+INFO:2025-10-30 15:07:13,216:Processing P0DN24 with model AF-P0DN24-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:13,257:No ENST transcript IDs were mapped to P0DN24
+INFO:2025-10-30 15:07:13,257:Processing P0DN25 with model AF-P0DN25-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:13,335:No transcript record found for P0DN25 in gnomAD.
+INFO:2025-10-30 15:07:13,335:Processing P0DN26 with model AF-P0DN26-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:13,397:No transcript record found for P0DN26 in gnomAD.
+INFO:2025-10-30 15:07:13,397:Processing P0DN37 with model AF-P0DN37-F1-model_v4.pdb
+INFO:2025-10-30 15:07:13,870:Computing HSC features for: P0DN37, ENST00000419275, ../Ntranos_Rotation/ESM-SaProt/AF-P0DN37-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:07:35,158:Successfully computed HSC for P0DN37.
+INFO:2025-10-30 15:07:35,158:Processing P0DN76 with model AF-P0DN76-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:35,229:No ENST transcript IDs were mapped to P0DN76
+INFO:2025-10-30 15:07:35,229:Processing P0DN77 with model AF-P0DN77-F1-model_v4.pdb
+INFO:2025-10-30 15:07:35,313:Computing HSC features for: P0DN77, ENST00000369929, ../Ntranos_Rotation/ESM-SaProt/AF-P0DN77-F1-model_v4.pdb.gz
+ERROR:2025-10-30 15:07:35,454:Missing ENST record in counts: ENST00000369929
+INFO:2025-10-30 15:07:35,454:Processing P0DN78 with model AF-P0DN78-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:35,718:No transcript record found for P0DN78 in gnomAD.
+INFO:2025-10-30 15:07:35,718:Processing P0DN79 with model AF-P0DN79-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:35,843:No ENST transcript IDs were mapped to P0DN79
+INFO:2025-10-30 15:07:35,843:Processing P0DN80 with model AF-P0DN80-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:35,919:No ENST transcript IDs were mapped to P0DN80
+INFO:2025-10-30 15:07:35,919:Processing P0DN81 with model AF-P0DN81-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:36,003:No ENST transcript IDs were mapped to P0DN81
+INFO:2025-10-30 15:07:36,004:Processing P0DN82 with model AF-P0DN82-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:36,087:No transcript record found for P0DN82 in gnomAD.
+INFO:2025-10-30 15:07:36,087:Processing P0DN84 with model AF-P0DN84-F1-model_v4.pdb
+ERROR:2025-10-30 15:07:36,146:No transcript record found for P0DN84 in gnomAD.
+INFO:2025-10-30 15:07:36,146:Processing P0DN86 with model AF-P0DN86-F1-model_v4.pdb
+INFO:2025-10-30 15:07:36,213:Computing HSC features for: P0DN86, ENST00000357383, ../Ntranos_Rotation/ESM-SaProt/AF-P0DN86-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:08:08,166:Successfully computed HSC for P0DN86.
+INFO:2025-10-30 15:08:08,166:Processing P0DN87 with model AF-P0DN87-F1-model_v4.pdb
+INFO:2025-10-30 15:08:08,222:Computing HSC features for: P0DN87, ENST00000596965, ../Ntranos_Rotation/ESM-SaProt/AF-P0DN87-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:08:39,742:Successfully computed HSC for P0DN87.
+INFO:2025-10-30 15:08:39,743:Processing P0DO92 with model AF-P0DO92-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:39,787:No ENST transcript IDs were mapped to P0DO92
+INFO:2025-10-30 15:08:39,787:Processing P0DO97 with model AF-P0DO97-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:39,914:No transcript record found for P0DO97 in gnomAD.
+INFO:2025-10-30 15:08:39,914:Processing P0DOY2 with model AF-P0DOY2-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:39,952:No valid CDS found for P0DOY2
+INFO:2025-10-30 15:08:39,952:Processing P0DOY3 with model AF-P0DOY3-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:39,989:No valid CDS found for P0DOY3
+INFO:2025-10-30 15:08:39,989:Processing P0DP01 with model AF-P0DP01-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:40,142:No ENST transcript IDs were mapped to P0DP01
+INFO:2025-10-30 15:08:40,142:Processing P0DP02 with model AF-P0DP02-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:40,394:No ENST transcript IDs were mapped to P0DP02
+INFO:2025-10-30 15:08:40,394:Processing P0DP03 with model AF-P0DP03-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:40,434:No ENST transcript IDs were mapped to P0DP03
+INFO:2025-10-30 15:08:40,434:Processing P0DP04 with model AF-P0DP04-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:40,476:No ENST transcript IDs were mapped to P0DP04
+INFO:2025-10-30 15:08:40,477:Processing P0DP06 with model AF-P0DP06-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:40,513:No ENST transcript IDs were mapped to P0DP06
+INFO:2025-10-30 15:08:40,513:Processing P0DP07 with model AF-P0DP07-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:40,556:No ENST transcript IDs were mapped to P0DP07
+INFO:2025-10-30 15:08:40,556:Pipeline completed.
+INFO:2025-10-30 15:08:40,556:no_enst_for_uniprot: 16
+INFO:2025-10-30 15:08:40,556:no_valid_cds: 2
+INFO:2025-10-30 15:08:40,557:no_variant_data: 22
+INFO:2025-10-30 15:08:40,557:bad_structure: 0
+INFO:2025-10-30 15:08:40,557:no_enst_mp: 2

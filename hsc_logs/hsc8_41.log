@@ -1,0 +1,150 @@
+INFO:2025-10-30 14:25:03,826:Starting HSC computation pipeline...
+INFO:2025-10-30 14:26:07,225:Processing P54257 with model AF-P54257-F1-model_v4.pdb
+INFO:2025-10-30 14:26:07,380:Computing HSC features for: P54257, ENST00000310778, ../Ntranos_Rotation/ESM-SaProt/AF-P54257-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:27:39,298:Successfully computed HSC for P54257.
+INFO:2025-10-30 14:27:39,298:Processing P54259 with model AF-P54259-F1-model_v4.pdb
+INFO:2025-10-30 14:27:39,440:Computing HSC features for: P54259, ENST00000356654, ../Ntranos_Rotation/ESM-SaProt/AF-P54259-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:30:15,897:Successfully computed HSC for P54259.
+INFO:2025-10-30 14:30:15,897:Processing P54274 with model AF-P54274-F1-model_v4.pdb
+INFO:2025-10-30 14:30:16,048:Computing HSC features for: P54274, ENST00000276603, ../Ntranos_Rotation/ESM-SaProt/AF-P54274-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:31:05,737:Successfully computed HSC for P54274.
+INFO:2025-10-30 14:31:05,738:Processing P54277 with model AF-P54277-F1-model_v4.pdb
+INFO:2025-10-30 14:31:05,905:Computing HSC features for: P54277, ENST00000441310, ../Ntranos_Rotation/ESM-SaProt/AF-P54277-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:32:26,480:Successfully computed HSC for P54277.
+INFO:2025-10-30 14:32:26,481:Processing P54278 with model AF-P54278-F1-model_v4.pdb
+ERROR:2025-10-30 14:32:26,655:No transcript record found for P54278 in gnomAD.
+INFO:2025-10-30 14:32:26,656:Processing P54284 with model AF-P54284-F1-model_v4.pdb
+INFO:2025-10-30 14:32:26,799:Computing HSC features for: P54284, ENST00000301050, ../Ntranos_Rotation/ESM-SaProt/AF-P54284-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:33:30,778:Successfully computed HSC for P54284.
+INFO:2025-10-30 14:33:30,778:Processing P54289 with model AF-P54289-F1-model_v4.pdb
+ERROR:2025-10-30 14:33:30,967:No valid CDS found for P54289
+INFO:2025-10-30 14:33:30,967:Processing P54296 with model AF-P54296-F1-model_v4.pdb
+INFO:2025-10-30 14:33:31,285:Computing HSC features for: P54296, ENST00000262113, ../Ntranos_Rotation/ESM-SaProt/AF-P54296-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:36:50,253:Successfully computed HSC for P54296.
+INFO:2025-10-30 14:36:50,253:Processing P54315 with model AF-P54315-F1-model_v4.pdb
+ERROR:2025-10-30 14:36:50,421:No transcript record found for P54315 in gnomAD.
+INFO:2025-10-30 14:36:50,421:Processing P54317 with model AF-P54317-F1-model_v4.pdb
+ERROR:2025-10-30 14:36:50,543:No ENST transcript IDs were mapped to P54317
+INFO:2025-10-30 14:36:50,543:Processing P54368 with model AF-P54368-F1-model_v4.pdb
+INFO:2025-10-30 14:36:50,651:Computing HSC features for: P54368, ENST00000602676, ../Ntranos_Rotation/ESM-SaProt/AF-P54368-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:37:31,240:Successfully computed HSC for P54368.
+INFO:2025-10-30 14:37:31,240:Processing P54577 with model AF-P54577-F1-model_v4.pdb
+INFO:2025-10-30 14:37:31,359:Computing HSC features for: P54577, ENST00000373477, ../Ntranos_Rotation/ESM-SaProt/AF-P54577-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:38:27,180:Successfully computed HSC for P54577.
+INFO:2025-10-30 14:38:27,180:Processing P54578 with model AF-P54578-F1-model_v4.pdb
+INFO:2025-10-30 14:38:27,276:Computing HSC features for: P54578, ENST00000261601, ../Ntranos_Rotation/ESM-SaProt/AF-P54578-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:39:15,948:Successfully computed HSC for P54578.
+INFO:2025-10-30 14:39:15,949:Processing P54619 with model AF-P54619-F1-model_v4.pdb
+INFO:2025-10-30 14:39:16,071:Computing HSC features for: P54619, ENST00000548065, ../Ntranos_Rotation/ESM-SaProt/AF-P54619-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:39:55,427:Successfully computed HSC for P54619.
+INFO:2025-10-30 14:39:55,428:Processing P54646 with model AF-P54646-F1-model_v4.pdb
+INFO:2025-10-30 14:39:55,601:Computing HSC features for: P54646, ENST00000371244, ../Ntranos_Rotation/ESM-SaProt/AF-P54646-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:40:58,605:Successfully computed HSC for P54646.
+INFO:2025-10-30 14:40:58,605:Processing P54652 with model AF-P54652-F1-model_v4.pdb
+INFO:2025-10-30 14:40:58,772:Computing HSC features for: P54652, ENST00000247207, ../Ntranos_Rotation/ESM-SaProt/AF-P54652-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:42:53,722:Successfully computed HSC for P54652.
+INFO:2025-10-30 14:42:53,723:Processing P54687 with model AF-P54687-F1-model_v4.pdb
+INFO:2025-10-30 14:42:53,851:Computing HSC features for: P54687, ENST00000261192, ../Ntranos_Rotation/ESM-SaProt/AF-P54687-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:43:32,065:Successfully computed HSC for P54687.
+INFO:2025-10-30 14:43:32,066:Processing P54707 with model AF-P54707-F1-model_v4.pdb
+INFO:2025-10-30 14:43:32,207:Computing HSC features for: P54707, ENST00000381946, ../Ntranos_Rotation/ESM-SaProt/AF-P54707-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:45:30,369:Successfully computed HSC for P54707.
+INFO:2025-10-30 14:45:30,369:Processing P54709 with model AF-P54709-F1-model_v4.pdb
+INFO:2025-10-30 14:45:30,463:Computing HSC features for: P54709, ENST00000286371, ../Ntranos_Rotation/ESM-SaProt/AF-P54709-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:46:02,210:Successfully computed HSC for P54709.
+INFO:2025-10-30 14:46:02,210:Processing P54710 with model AF-P54710-F1-model_v4.pdb
+INFO:2025-10-30 14:46:02,267:Computing HSC features for: P54710, ENST00000292079, ../Ntranos_Rotation/ESM-SaProt/AF-P54710-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:46:13,526:Successfully computed HSC for P54710.
+INFO:2025-10-30 14:46:13,526:Processing P54725 with model AF-P54725-F1-model_v4.pdb
+INFO:2025-10-30 14:46:13,722:Computing HSC features for: P54725, ENST00000586534, ../Ntranos_Rotation/ESM-SaProt/AF-P54725-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:47:20,866:Successfully computed HSC for P54725.
+INFO:2025-10-30 14:47:20,866:Processing P54727 with model AF-P54727-F1-model_v4.pdb
+INFO:2025-10-30 14:47:20,935:Computing HSC features for: P54727, ENST00000358015, ../Ntranos_Rotation/ESM-SaProt/AF-P54727-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:48:00,556:Successfully computed HSC for P54727.
+INFO:2025-10-30 14:48:00,556:Processing P54750 with model AF-P54750-F1-model_v4.pdb
+ERROR:2025-10-30 14:48:00,698:No transcript record found for P54750 in gnomAD.
+INFO:2025-10-30 14:48:00,698:Processing P54753 with model AF-P54753-F1-model_v4.pdb
+INFO:2025-10-30 14:48:00,956:Computing HSC features for: P54753, ENST00000330394, ../Ntranos_Rotation/ESM-SaProt/AF-P54753-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:51:07,468:Successfully computed HSC for P54753.
+INFO:2025-10-30 14:51:07,468:Processing P54756 with model AF-P54756-F1-model_v4.pdb
+INFO:2025-10-30 14:51:07,705:Computing HSC features for: P54756, ENST00000273854, ../Ntranos_Rotation/ESM-SaProt/AF-P54756-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:53:15,728:Successfully computed HSC for P54756.
+INFO:2025-10-30 14:53:15,729:Processing P54760 with model AF-P54760-F1-model_v4.pdb
+INFO:2025-10-30 14:53:15,953:Computing HSC features for: P54760, ENST00000358173, ../Ntranos_Rotation/ESM-SaProt/AF-P54760-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:55:54,866:Successfully computed HSC for P54760.
+INFO:2025-10-30 14:55:54,866:Processing P54762 with model AF-P54762-F1-model_v4.pdb
+INFO:2025-10-30 14:55:54,992:Computing HSC features for: P54762, ENST00000398015, ../Ntranos_Rotation/ESM-SaProt/AF-P54762-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:57:53,473:Successfully computed HSC for P54762.
+INFO:2025-10-30 14:57:53,473:Processing P54764 with model AF-P54764-F1-model_v4.pdb
+INFO:2025-10-30 14:57:53,634:Computing HSC features for: P54764, ENST00000281821, ../Ntranos_Rotation/ESM-SaProt/AF-P54764-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:59:40,819:Successfully computed HSC for P54764.
+INFO:2025-10-30 14:59:40,819:Processing P54792 with model AF-P54792-F1-model_v4.pdb
+ERROR:2025-10-30 14:59:40,917:No ENST transcript IDs were mapped to P54792
+INFO:2025-10-30 14:59:40,917:Processing P54793 with model AF-P54793-F1-model_v4.pdb
+INFO:2025-10-30 14:59:41,001:Computing HSC features for: P54793, ENST00000359361, ../Ntranos_Rotation/ESM-SaProt/AF-P54793-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:00:50,567:Successfully computed HSC for P54793.
+INFO:2025-10-30 15:00:50,567:Processing P54802 with model AF-P54802-F1-model_v4.pdb
+INFO:2025-10-30 15:00:50,676:Computing HSC features for: P54802, ENST00000225927, ../Ntranos_Rotation/ESM-SaProt/AF-P54802-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:02:40,904:Successfully computed HSC for P54802.
+INFO:2025-10-30 15:02:40,904:Processing P54803 with model AF-P54803-F1-model_v4.pdb
+INFO:2025-10-30 15:02:41,004:Computing HSC features for: P54803, ENST00000261304, ../Ntranos_Rotation/ESM-SaProt/AF-P54803-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:58,759:Successfully computed HSC for P54803.
+INFO:2025-10-30 15:03:58,759:Processing P54819 with model AF-P54819-F1-model_v4.pdb
+ERROR:2025-10-30 15:03:58,842:No transcript record found for P54819 in gnomAD.
+INFO:2025-10-30 15:03:58,842:Processing P54821 with model AF-P54821-F1-model_v4.pdb
+INFO:2025-10-30 15:03:58,926:Computing HSC features for: P54821, ENST00000239461, ../Ntranos_Rotation/ESM-SaProt/AF-P54821-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:04:36,218:Successfully computed HSC for P54821.
+INFO:2025-10-30 15:04:36,218:Processing P54826 with model AF-P54826-F1-model_v4.pdb
+INFO:2025-10-30 15:04:36,275:Computing HSC features for: P54826, ENST00000298743, ../Ntranos_Rotation/ESM-SaProt/AF-P54826-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:05:56,346:Successfully computed HSC for P54826.
+INFO:2025-10-30 15:05:56,346:Processing P54829 with model AF-P54829-F1-model_v4.pdb
+INFO:2025-10-30 15:05:56,480:Computing HSC features for: P54829, ENST00000358540, ../Ntranos_Rotation/ESM-SaProt/AF-P54829-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:07:52,647:Successfully computed HSC for P54829.
+INFO:2025-10-30 15:07:52,648:Processing P54840 with model AF-P54840-F1-model_v4.pdb
+INFO:2025-10-30 15:07:52,802:Computing HSC features for: P54840, ENST00000261195, ../Ntranos_Rotation/ESM-SaProt/AF-P54840-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:09:43,618:Successfully computed HSC for P54840.
+INFO:2025-10-30 15:09:43,619:Processing P54845 with model AF-P54845-F1-model_v4.pdb
+INFO:2025-10-30 15:09:43,686:Computing HSC features for: P54845, ENST00000396997, ../Ntranos_Rotation/ESM-SaProt/AF-P54845-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:10:45,625:Successfully computed HSC for P54845.
+INFO:2025-10-30 15:10:45,625:Processing P54849 with model AF-P54849-F1-model_v4.pdb
+INFO:2025-10-30 15:10:45,679:Computing HSC features for: P54849, ENST00000256951, ../Ntranos_Rotation/ESM-SaProt/AF-P54849-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:11:11,994:Successfully computed HSC for P54849.
+INFO:2025-10-30 15:11:11,994:Processing P54851 with model AF-P54851-F1-model_v4.pdb
+INFO:2025-10-30 15:11:12,047:Computing HSC features for: P54851, ENST00000359543, ../Ntranos_Rotation/ESM-SaProt/AF-P54851-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:11:45,335:Successfully computed HSC for P54851.
+INFO:2025-10-30 15:11:45,335:Processing P54852 with model AF-P54852-F1-model_v4.pdb
+INFO:2025-10-30 15:11:45,958:Computing HSC features for: P54852, ENST00000270221, ../Ntranos_Rotation/ESM-SaProt/AF-P54852-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:12:20,180:Successfully computed HSC for P54852.
+INFO:2025-10-30 15:12:20,180:Processing P54855 with model AF-P54855-F1-model_v4.pdb
+INFO:2025-10-30 15:12:20,342:Computing HSC features for: P54855, ENST00000338206, ../Ntranos_Rotation/ESM-SaProt/AF-P54855-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:13:23,373:Successfully computed HSC for P54855.
+INFO:2025-10-30 15:13:23,373:Processing P54868 with model AF-P54868-F1-model_v4.pdb
+INFO:2025-10-30 15:13:23,456:Computing HSC features for: P54868, ENST00000369406, ../Ntranos_Rotation/ESM-SaProt/AF-P54868-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:14:27,213:Successfully computed HSC for P54868.
+INFO:2025-10-30 15:14:27,213:Processing P54886 with model AF-P54886-F1-model_v4.pdb
+INFO:2025-10-30 15:14:27,417:Computing HSC features for: P54886, ENST00000371224, ../Ntranos_Rotation/ESM-SaProt/AF-P54886-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:16:06,353:Successfully computed HSC for P54886.
+INFO:2025-10-30 15:16:06,353:Processing P54920 with model AF-P54920-F1-model_v4.pdb
+INFO:2025-10-30 15:16:06,463:Computing HSC features for: P54920, ENST00000263354, ../Ntranos_Rotation/ESM-SaProt/AF-P54920-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:16:46,399:Successfully computed HSC for P54920.
+INFO:2025-10-30 15:16:46,399:Processing P54922 with model AF-P54922-F1-model_v4.pdb
+INFO:2025-10-30 15:16:46,466:Computing HSC features for: P54922, ENST00000357003, ../Ntranos_Rotation/ESM-SaProt/AF-P54922-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:17:23,857:Successfully computed HSC for P54922.
+INFO:2025-10-30 15:17:23,857:Processing P55000 with model AF-P55000-F1-model_v4.pdb
+INFO:2025-10-30 15:17:23,890:Computing HSC features for: P55000, ENST00000246515, ../Ntranos_Rotation/ESM-SaProt/AF-P55000-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:17:37,690:Successfully computed HSC for P55000.
+INFO:2025-10-30 15:17:37,690:Processing P55001 with model AF-P55001-F1-model_v4.pdb
+INFO:2025-10-30 15:17:37,746:Computing HSC features for: P55001, ENST00000375535, ../Ntranos_Rotation/ESM-SaProt/AF-P55001-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:18:01,101:Successfully computed HSC for P55001.
+INFO:2025-10-30 15:18:01,101:Processing P55008 with model AF-P55008-F1-model_v4.pdb
+INFO:2025-10-30 15:18:01,153:Computing HSC features for: P55008, ENST00000376059, ../Ntranos_Rotation/ESM-SaProt/AF-P55008-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:18:23,539:Successfully computed HSC for P55008.
+INFO:2025-10-30 15:18:23,539:Processing P55010 with model AF-P55010-F1-model_v4.pdb
+INFO:2025-10-30 15:18:23,647:Computing HSC features for: P55010, ENST00000216554, ../Ntranos_Rotation/ESM-SaProt/AF-P55010-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:19:30,874:Successfully computed HSC for P55010.
+INFO:2025-10-30 15:19:30,874:Pipeline completed.
+INFO:2025-10-30 15:19:30,874:no_enst_for_uniprot: 2
+INFO:2025-10-30 15:19:30,874:no_valid_cds: 1
+INFO:2025-10-30 15:19:30,874:no_variant_data: 4
+INFO:2025-10-30 15:19:30,874:bad_structure: 0
+INFO:2025-10-30 15:19:30,874:no_enst_mp: 0

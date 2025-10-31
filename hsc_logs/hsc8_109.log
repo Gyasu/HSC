@@ -1,0 +1,107 @@
+INFO:2025-10-30 14:26:02,998:Starting HSC computation pipeline...
+INFO:2025-10-30 14:27:00,581:Processing A0A1W2PNU3 with model AF-A0A1W2PNU3-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:00,658:No transcript record found for A0A1W2PNU3 in gnomAD.
+INFO:2025-10-30 14:27:00,658:Processing A0A1W2PP81 with model AF-A0A1W2PP81-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:00,697:No transcript record found for A0A1W2PP81 in gnomAD.
+INFO:2025-10-30 14:27:00,697:Processing A0A1W2PP97 with model AF-A0A1W2PP97-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:00,737:No transcript record found for A0A1W2PP97 in gnomAD.
+INFO:2025-10-30 14:27:00,737:Processing A0A1W2PPD8 with model AF-A0A1W2PPD8-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:00,837:No transcript record found for A0A1W2PPD8 in gnomAD.
+INFO:2025-10-30 14:27:00,837:Processing A0A1W2PPE2 with model AF-A0A1W2PPE2-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:00,902:No transcript record found for A0A1W2PPE2 in gnomAD.
+INFO:2025-10-30 14:27:00,902:Processing A0A1W2PPE3 with model AF-A0A1W2PPE3-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:00,976:No transcript record found for A0A1W2PPE3 in gnomAD.
+INFO:2025-10-30 14:27:00,976:Processing A0A1W2PPF3 with model AF-A0A1W2PPF3-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,050:No transcript record found for A0A1W2PPF3 in gnomAD.
+INFO:2025-10-30 14:27:01,050:Processing A0A1W2PPG7 with model AF-A0A1W2PPG7-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,085:No transcript record found for A0A1W2PPG7 in gnomAD.
+INFO:2025-10-30 14:27:01,085:Processing A0A1W2PPH5 with model AF-A0A1W2PPH5-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,135:No transcript record found for A0A1W2PPH5 in gnomAD.
+INFO:2025-10-30 14:27:01,135:Processing A0A1W2PPK0 with model AF-A0A1W2PPK0-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,201:No transcript record found for A0A1W2PPK0 in gnomAD.
+INFO:2025-10-30 14:27:01,201:Processing A0A1W2PPL8 with model AF-A0A1W2PPL8-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,251:No transcript record found for A0A1W2PPL8 in gnomAD.
+INFO:2025-10-30 14:27:01,251:Processing A0A1W2PPM0 with model AF-A0A1W2PPM0-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,289:No ENST transcript IDs were mapped to A0A1W2PPM0
+INFO:2025-10-30 14:27:01,289:Processing A0A1W2PPM1 with model AF-A0A1W2PPM1-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,360:No transcript record found for A0A1W2PPM1 in gnomAD.
+INFO:2025-10-30 14:27:01,360:Processing A0A1W2PPW3 with model AF-A0A1W2PPW3-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,413:No transcript record found for A0A1W2PPW3 in gnomAD.
+INFO:2025-10-30 14:27:01,414:Processing A0A1W2PQ09 with model AF-A0A1W2PQ09-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,497:No transcript record found for A0A1W2PQ09 in gnomAD.
+INFO:2025-10-30 14:27:01,497:Processing A0A1W2PQ27 with model AF-A0A1W2PQ27-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,556:No transcript record found for A0A1W2PQ27 in gnomAD.
+INFO:2025-10-30 14:27:01,556:Processing A0A1W2PQ64 with model AF-A0A1W2PQ64-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,625:No transcript record found for A0A1W2PQ64 in gnomAD.
+INFO:2025-10-30 14:27:01,625:Processing A0A1W2PQ72 with model AF-A0A1W2PQ72-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,728:No transcript record found for A0A1W2PQ72 in gnomAD.
+INFO:2025-10-30 14:27:01,728:Processing A0A1W2PQ73 with model AF-A0A1W2PQ73-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,816:No transcript record found for A0A1W2PQ73 in gnomAD.
+INFO:2025-10-30 14:27:01,817:Processing A0A1W2PQC6 with model AF-A0A1W2PQC6-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,874:No transcript record found for A0A1W2PQC6 in gnomAD.
+INFO:2025-10-30 14:27:01,874:Processing A0A1W2PQD8 with model AF-A0A1W2PQD8-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,940:No transcript record found for A0A1W2PQD8 in gnomAD.
+INFO:2025-10-30 14:27:01,940:Processing A0A1W2PQF6 with model AF-A0A1W2PQF6-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:01,997:No valid CDS found for A0A1W2PQF6
+INFO:2025-10-30 14:27:01,997:Processing A0A1W2PQJ5 with model AF-A0A1W2PQJ5-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,035:No transcript record found for A0A1W2PQJ5 in gnomAD.
+INFO:2025-10-30 14:27:02,035:Processing A0A1W2PQL4 with model AF-A0A1W2PQL4-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,111:No transcript record found for A0A1W2PQL4 in gnomAD.
+INFO:2025-10-30 14:27:02,111:Processing A0A1W2PQM1 with model AF-A0A1W2PQM1-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,205:No valid CDS found for A0A1W2PQM1
+INFO:2025-10-30 14:27:02,205:Processing A0A1W2PQU2 with model AF-A0A1W2PQU2-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,215:No transcript record found for A0A1W2PQU2 in gnomAD.
+INFO:2025-10-30 14:27:02,215:Processing A0A1W2PR19 with model AF-A0A1W2PR19-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,257:No transcript record found for A0A1W2PR19 in gnomAD.
+INFO:2025-10-30 14:27:02,257:Processing A0A1W2PR48 with model AF-A0A1W2PR48-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,326:No transcript record found for A0A1W2PR48 in gnomAD.
+INFO:2025-10-30 14:27:02,326:Processing A0A1W2PR64 with model AF-A0A1W2PR64-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,376:No transcript record found for A0A1W2PR64 in gnomAD.
+INFO:2025-10-30 14:27:02,376:Processing A0A1W2PR75 with model AF-A0A1W2PR75-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,399:No transcript record found for A0A1W2PR75 in gnomAD.
+INFO:2025-10-30 14:27:02,399:Processing A0A1W2PR80 with model AF-A0A1W2PR80-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,464:No ENST transcript IDs were mapped to A0A1W2PR80
+INFO:2025-10-30 14:27:02,464:Processing A0A1W2PR82 with model AF-A0A1W2PR82-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,533:No transcript record found for A0A1W2PR82 in gnomAD.
+INFO:2025-10-30 14:27:02,533:Processing A0A1W2PR95 with model AF-A0A1W2PR95-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,589:No transcript record found for A0A1W2PR95 in gnomAD.
+INFO:2025-10-30 14:27:02,589:Processing A0A1W2PRE2 with model AF-A0A1W2PRE2-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,615:No valid CDS found for A0A1W2PRE2
+INFO:2025-10-30 14:27:02,615:Processing A0A1W2PRG0 with model AF-A0A1W2PRG0-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,668:No transcript record found for A0A1W2PRG0 in gnomAD.
+INFO:2025-10-30 14:27:02,668:Processing A0A1W2PRN1 with model AF-A0A1W2PRN1-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,694:No valid CDS found for A0A1W2PRN1
+INFO:2025-10-30 14:27:02,694:Processing A0A1W2PRN6 with model AF-A0A1W2PRN6-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,736:No transcript record found for A0A1W2PRN6 in gnomAD.
+INFO:2025-10-30 14:27:02,736:Processing A0A1W2PRP0 with model AF-A0A1W2PRP0-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,781:No transcript record found for A0A1W2PRP0 in gnomAD.
+INFO:2025-10-30 14:27:02,781:Processing A0A1W2PRS3 with model AF-A0A1W2PRS3-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,826:No valid CDS found for A0A1W2PRS3
+INFO:2025-10-30 14:27:02,826:Processing A0A1W2PRV1 with model AF-A0A1W2PRV1-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,875:No transcript record found for A0A1W2PRV1 in gnomAD.
+INFO:2025-10-30 14:27:02,875:Processing A0A1W2PS18 with model AF-A0A1W2PS18-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,908:No transcript record found for A0A1W2PS18 in gnomAD.
+INFO:2025-10-30 14:27:02,908:Processing A0A286YEU6 with model AF-A0A286YEU6-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,952:No transcript record found for A0A286YEU6 in gnomAD.
+INFO:2025-10-30 14:27:02,953:Processing A0A286YEV6 with model AF-A0A286YEV6-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:02,982:No transcript record found for A0A286YEV6 in gnomAD.
+INFO:2025-10-30 14:27:02,982:Processing A0A286YEX9 with model AF-A0A286YEX9-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:03,006:No valid CDS found for A0A286YEX9
+INFO:2025-10-30 14:27:03,006:Processing A0A286YEY9 with model AF-A0A286YEY9-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:03,016:No transcript record found for A0A286YEY9 in gnomAD.
+INFO:2025-10-30 14:27:03,016:Processing A0A286YF01 with model AF-A0A286YF01-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:03,045:No transcript record found for A0A286YF01 in gnomAD.
+INFO:2025-10-30 14:27:03,045:Processing A0A286YF18 with model AF-A0A286YF18-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:03,082:No transcript record found for A0A286YF18 in gnomAD.
+INFO:2025-10-30 14:27:03,082:Processing A0A286YF46 with model AF-A0A286YF46-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:03,108:No transcript record found for A0A286YF46 in gnomAD.
+INFO:2025-10-30 14:27:03,108:Processing A0A286YF58 with model AF-A0A286YF58-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:03,180:No transcript record found for A0A286YF58 in gnomAD.
+INFO:2025-10-30 14:27:03,180:Processing A0A286YF60 with model AF-A0A286YF60-F1-model_v4.pdb
+ERROR:2025-10-30 14:27:03,210:No transcript record found for A0A286YF60 in gnomAD.
+INFO:2025-10-30 14:27:03,210:Pipeline completed.
+INFO:2025-10-30 14:27:03,210:no_enst_for_uniprot: 2
+INFO:2025-10-30 14:27:03,210:no_valid_cds: 6
+INFO:2025-10-30 14:27:03,210:no_variant_data: 42
+INFO:2025-10-30 14:27:03,211:bad_structure: 0
+INFO:2025-10-30 14:27:03,211:no_enst_mp: 0

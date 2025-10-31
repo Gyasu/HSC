@@ -1,6 +1,0 @@
-INFO:2025-10-30 13:10:51,422:Starting HSC computation pipeline...
-INFO:2025-10-30 13:11:42,064:Processing Q07283 with model AF-Q07283-F1-model_v4.pdb
-ERROR:2025-10-30 13:11:42,519:No transcript record found for Q07283 in gnomAD.
-INFO:2025-10-30 13:11:42,520:Processing Q07325 with model AF-Q07325-F1-model_v4.pdb
-INFO:2025-10-30 13:11:42,639:Computing HSC features for: Q07325, ENST00000264888, ../Ntranos_Rotation/ESM-SaProt/AF-Q07325-F1-model_v4.pdb.gz
-INFO:2025-10-30 13:11:55,599:Successfully computed HSC for Q07325.

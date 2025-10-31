@@ -1,0 +1,131 @@
+INFO:2025-10-30 14:27:03,842:Starting HSC computation pipeline...
+INFO:2025-10-30 14:28:19,205:Processing A0A6Q8PHS2 with model AF-A0A6Q8PHS2-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,242:No transcript record found for A0A6Q8PHS2 in gnomAD.
+INFO:2025-10-30 14:28:19,242:Processing A0A7E1QX52 with model AF-A0A7E1QX52-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,286:No valid CDS found for A0A7E1QX52
+INFO:2025-10-30 14:28:19,286:Processing A0A7I2V2S6 with model AF-A0A7I2V2S6-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,323:No transcript record found for A0A7I2V2S6 in gnomAD.
+INFO:2025-10-30 14:28:19,323:Processing A0A7I2V3D3 with model AF-A0A7I2V3D3-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,423:No ENST transcript IDs were mapped to A0A7I2V3D3
+INFO:2025-10-30 14:28:19,423:Processing A0A7I2V3R4 with model AF-A0A7I2V3R4-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,509:No transcript record found for A0A7I2V3R4 in gnomAD.
+INFO:2025-10-30 14:28:19,510:Processing A0A7I2V4K3 with model AF-A0A7I2V4K3-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,543:No transcript record found for A0A7I2V4K3 in gnomAD.
+INFO:2025-10-30 14:28:19,543:Processing A0A7I2V4U8 with model AF-A0A7I2V4U8-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,571:No transcript record found for A0A7I2V4U8 in gnomAD.
+INFO:2025-10-30 14:28:19,571:Processing A0A7I2V5U8 with model AF-A0A7I2V5U8-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,631:No ENST transcript IDs were mapped to A0A7I2V5U8
+INFO:2025-10-30 14:28:19,631:Processing A0A7I2V6D3 with model AF-A0A7I2V6D3-F1-model_v4.pdb
+ERROR:2025-10-30 14:28:19,655:No transcript record found for A0A7I2V6D3 in gnomAD.
+INFO:2025-10-30 14:28:19,656:Processing A0AUZ9 with model AF-A0AUZ9-F1-model_v4.pdb
+INFO:2025-10-30 14:28:19,857:Computing HSC features for: A0AUZ9, ENST00000281772, ../Ntranos_Rotation/ESM-SaProt/AF-A0AUZ9-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:30:14,078:Successfully computed HSC for A0AUZ9.
+INFO:2025-10-30 14:30:14,078:Processing A0AV02 with model AF-A0AV02-F1-model_v4.pdb
+INFO:2025-10-30 14:30:14,203:Computing HSC features for: A0AV02, ENST00000393469, ../Ntranos_Rotation/ESM-SaProt/AF-A0AV02-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:31:56,532:Successfully computed HSC for A0AV02.
+INFO:2025-10-30 14:31:56,532:Processing A0AV96 with model AF-A0AV96-F1-model_v4.pdb
+INFO:2025-10-30 14:31:56,672:Computing HSC features for: A0AV96, ENST00000295971, ../Ntranos_Rotation/ESM-SaProt/AF-A0AV96-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:33:59,719:Successfully computed HSC for A0AV96.
+INFO:2025-10-30 14:33:59,719:Processing A0AVF1 with model AF-A0AVF1-F1-model_v4.pdb
+INFO:2025-10-30 14:33:59,827:Computing HSC features for: A0AVF1, ENST00000464848, ../Ntranos_Rotation/ESM-SaProt/AF-A0AVF1-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:34:53,167:Successfully computed HSC for A0AVF1.
+INFO:2025-10-30 14:34:53,167:Processing A0AVI2 with model AF-A0AVI2-F1-model_v4.pdb
+ERROR:2025-10-30 14:34:53,428:No transcript record found for A0AVI2 in gnomAD.
+INFO:2025-10-30 14:34:53,429:Processing A0AVI4 with model AF-A0AVI4-F1-model_v4.pdb
+INFO:2025-10-30 14:34:53,503:Computing HSC features for: A0AVI4, ENST00000382936, ../Ntranos_Rotation/ESM-SaProt/AF-A0AVI4-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:35:55,290:Successfully computed HSC for A0AVI4.
+INFO:2025-10-30 14:35:55,290:Processing A0AVK6 with model AF-A0AVK6-F1-model_v4.pdb
+INFO:2025-10-30 14:35:55,437:Computing HSC features for: A0AVK6, ENST00000250024, ../Ntranos_Rotation/ESM-SaProt/AF-A0AVK6-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:37:35,556:Successfully computed HSC for A0AVK6.
+INFO:2025-10-30 14:37:35,556:Processing A0AVT1 with model AF-A0AVT1-F1-model_v4.pdb
+INFO:2025-10-30 14:37:35,791:Computing HSC features for: A0AVT1, ENST00000322244, ../Ntranos_Rotation/ESM-SaProt/AF-A0AVT1-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:39:21,264:Successfully computed HSC for A0AVT1.
+INFO:2025-10-30 14:39:21,264:Processing A0FGR8 with model AF-A0FGR8-F1-model_v4.pdb
+ERROR:2025-10-30 14:39:21,466:No valid CDS found for A0FGR8
+INFO:2025-10-30 14:39:21,467:Processing A0FGR9 with model AF-A0FGR9-F1-model_v4.pdb
+INFO:2025-10-30 14:39:21,776:Computing HSC features for: A0FGR9, ENST00000389567, ../Ntranos_Rotation/ESM-SaProt/AF-A0FGR9-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:41:14,630:Successfully computed HSC for A0FGR9.
+INFO:2025-10-30 14:41:14,631:Processing A0JD32 with model AF-A0JD32-F1-model_v4.pdb
+ERROR:2025-10-30 14:41:14,705:No valid CDS found for A0JD32
+INFO:2025-10-30 14:41:14,705:Processing A0JD36 with model AF-A0JD36-F1-model_v4.pdb
+ERROR:2025-10-30 14:41:14,744:No valid CDS found for A0JD36
+INFO:2025-10-30 14:41:14,744:Processing A0JD37 with model AF-A0JD37-F1-model_v4.pdb
+ERROR:2025-10-30 14:41:14,792:No valid CDS found for A0JD37
+INFO:2025-10-30 14:41:14,792:Processing A0JLT2 with model AF-A0JLT2-F1-model_v4.pdb
+ERROR:2025-10-30 14:41:14,881:No valid CDS found for A0JLT2
+INFO:2025-10-30 14:41:14,882:Processing A0JNW5 with model AF-A0JNW5-F1-model_v4.pdb
+INFO:2025-10-30 14:41:15,187:Computing HSC features for: A0JNW5, ENST00000279907, ../Ntranos_Rotation/ESM-SaProt/AF-A0JNW5-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:43:23,841:Successfully computed HSC for A0JNW5.
+INFO:2025-10-30 14:43:23,842:Processing A0JP26 with model AF-A0JP26-F1-model_v4.pdb
+ERROR:2025-10-30 14:43:24,013:No transcript record found for A0JP26 in gnomAD.
+INFO:2025-10-30 14:43:24,014:Processing A0M8Q6 with model AF-A0M8Q6-F1-model_v4.pdb
+ERROR:2025-10-30 14:43:24,066:No ENST transcript IDs were mapped to A0M8Q6
+INFO:2025-10-30 14:43:24,067:Processing A0MZ66 with model AF-A0MZ66-F1-model_v4.pdb
+INFO:2025-10-30 14:43:24,215:Computing HSC features for: A0MZ66, ENST00000355371, ../Ntranos_Rotation/ESM-SaProt/AF-A0MZ66-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:44:25,952:Successfully computed HSC for A0MZ66.
+INFO:2025-10-30 14:44:25,953:Processing A0N4X2 with model AF-A0N4X2-F1-model_v4.pdb
+ERROR:2025-10-30 14:44:25,983:No valid CDS found for A0N4X2
+INFO:2025-10-30 14:44:25,983:Processing A0N4X5 with model AF-A0N4X5-F1-model_v4.pdb
+ERROR:2025-10-30 14:44:26,006:No valid CDS found for A0N4X5
+INFO:2025-10-30 14:44:26,006:Processing A0N4Z3 with model AF-A0N4Z3-F1-model_v4.pdb
+ERROR:2025-10-30 14:44:26,025:No valid CDS found for A0N4Z3
+INFO:2025-10-30 14:44:26,025:Processing A0N4Z7 with model AF-A0N4Z7-F1-model_v4.pdb
+ERROR:2025-10-30 14:44:26,047:No valid CDS found for A0N4Z7
+INFO:2025-10-30 14:44:26,047:Processing A0N4Z8 with model AF-A0N4Z8-F1-model_v4.pdb
+ERROR:2025-10-30 14:44:26,064:No valid CDS found for A0N4Z8
+INFO:2025-10-30 14:44:26,064:Processing A0PG75 with model AF-A0PG75-F1-model_v4.pdb
+INFO:2025-10-30 14:44:26,150:Computing HSC features for: A0PG75, ENST00000443512, ../Ntranos_Rotation/ESM-SaProt/AF-A0PG75-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:45:00,248:Successfully computed HSC for A0PG75.
+INFO:2025-10-30 14:45:00,248:Processing A0PJE2 with model AF-A0PJE2-F1-model_v4.pdb
+ERROR:2025-10-30 14:45:00,385:No valid CDS found for A0PJE2
+INFO:2025-10-30 14:45:00,385:Processing A0PJK1 with model AF-A0PJK1-F1-model_v4.pdb
+INFO:2025-10-30 14:45:00,617:Computing HSC features for: A0PJK1, ENST00000395645, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJK1-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:46:53,501:Successfully computed HSC for A0PJK1.
+INFO:2025-10-30 14:46:53,501:Processing A0PJW6 with model AF-A0PJW6-F1-model_v4.pdb
+INFO:2025-10-30 14:46:53,560:Computing HSC features for: A0PJW6, ENST00000307366, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJW6-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:47:33,851:Successfully computed HSC for A0PJW6.
+INFO:2025-10-30 14:47:33,851:Processing A0PJW8 with model AF-A0PJW8-F1-model_v4.pdb
+INFO:2025-10-30 14:47:33,900:Computing HSC features for: A0PJW8, ENST00000309950, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJW8-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:47:49,625:Successfully computed HSC for A0PJW8.
+INFO:2025-10-30 14:47:49,625:Processing A0PJX0 with model AF-A0PJX0-F1-model_v4.pdb
+INFO:2025-10-30 14:47:49,694:Computing HSC features for: A0PJX0, ENST00000288861, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJX0-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:48:11,100:Successfully computed HSC for A0PJX0.
+INFO:2025-10-30 14:48:11,100:Processing A0PJX2 with model AF-A0PJX2-F1-model_v4.pdb
+INFO:2025-10-30 14:48:11,149:Computing HSC features for: A0PJX2, ENST00000217320, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJX2-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:48:37,938:Successfully computed HSC for A0PJX2.
+INFO:2025-10-30 14:48:37,939:Processing A0PJX4 with model AF-A0PJX4-F1-model_v4.pdb
+INFO:2025-10-30 14:48:38,032:Computing HSC features for: A0PJX4, ENST00000319234, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJX4-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:49:25,266:Successfully computed HSC for A0PJX4.
+INFO:2025-10-30 14:49:25,267:Processing A0PJX8 with model AF-A0PJX8-F1-model_v4.pdb
+INFO:2025-10-30 14:49:25,392:Computing HSC features for: A0PJX8, ENST00000375782, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJX8-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:50:22,084:Successfully computed HSC for A0PJX8.
+INFO:2025-10-30 14:50:22,085:Processing A0PJY2 with model AF-A0PJY2-F1-model_v4.pdb
+INFO:2025-10-30 14:50:22,186:Computing HSC features for: A0PJY2, ENST00000442488, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJY2-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:51:38,056:Successfully computed HSC for A0PJY2.
+INFO:2025-10-30 14:51:38,056:Processing A0PJZ0 with model AF-A0PJZ0-F1-model_v4.pdb
+ERROR:2025-10-30 14:51:38,126:No ENST transcript IDs were mapped to A0PJZ0
+INFO:2025-10-30 14:51:38,127:Processing A0PJZ3 with model AF-A0PJZ3-F1-model_v4.pdb
+INFO:2025-10-30 14:51:38,239:Computing HSC features for: A0PJZ3, ENST00000389617, ../Ntranos_Rotation/ESM-SaProt/AF-A0PJZ3-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:52:44,230:Successfully computed HSC for A0PJZ3.
+INFO:2025-10-30 14:52:44,230:Processing A0PK00 with model AF-A0PK00-F1-model_v4.pdb
+INFO:2025-10-30 14:52:44,296:Computing HSC features for: A0PK00, ENST00000449592, ../Ntranos_Rotation/ESM-SaProt/AF-A0PK00-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:53:29,752:Successfully computed HSC for A0PK00.
+INFO:2025-10-30 14:53:29,752:Processing A0PK05 with model AF-A0PK05-F1-model_v4.pdb
+INFO:2025-10-30 14:53:29,831:Computing HSC features for: A0PK05, ENST00000389583, ../Ntranos_Rotation/ESM-SaProt/AF-A0PK05-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:54:14,080:Successfully computed HSC for A0PK05.
+INFO:2025-10-30 14:54:14,081:Processing A0PK11 with model AF-A0PK11-F1-model_v4.pdb
+INFO:2025-10-30 14:54:14,168:Computing HSC features for: A0PK11, ENST00000511148, ../Ntranos_Rotation/ESM-SaProt/AF-A0PK11-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:54:48,392:Successfully computed HSC for A0PK11.
+INFO:2025-10-30 14:54:48,393:Processing A0ZSE6 with model AF-A0ZSE6-F1-model_v4.pdb
+ERROR:2025-10-30 14:54:48,449:No ENST transcript IDs were mapped to A0ZSE6
+INFO:2025-10-30 14:54:48,449:Processing A1A4F0 with model AF-A1A4F0-F1-model_v4.pdb
+ERROR:2025-10-30 14:54:48,495:No ENST transcript IDs were mapped to A1A4F0
+INFO:2025-10-30 14:54:48,495:Processing A1A4G5 with model AF-A1A4G5-F1-model_v4.pdb
+INFO:2025-10-30 14:54:48,554:Computing HSC features for: A1A4G5, ENST00000383693, ../Ntranos_Rotation/ESM-SaProt/AF-A1A4G5-F1-model_v4.pdb.gz
+INFO:2025-10-30 14:55:09,363:Successfully computed HSC for A1A4G5.
+INFO:2025-10-30 14:55:09,363:Pipeline completed.
+INFO:2025-10-30 14:55:09,363:no_enst_for_uniprot: 6
+INFO:2025-10-30 14:55:09,363:no_valid_cds: 12
+INFO:2025-10-30 14:55:09,363:no_variant_data: 8
+INFO:2025-10-30 14:55:09,363:bad_structure: 0
+INFO:2025-10-30 14:55:09,363:no_enst_mp: 0

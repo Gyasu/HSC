@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-# example command:
-#python -m hsc.main_final -c config.json -i all_uniprots/split_69.txt -l hsc.log 
-
 import csv
 import gzip
 import json

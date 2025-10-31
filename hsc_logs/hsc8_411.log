@@ -1,0 +1,17 @@
+INFO:2025-10-30 15:04:00,941:Starting HSC computation pipeline...
+INFO:2025-10-30 15:05:02,886:Processing P13807 with model AF-P13807-F1-model_v4.pdb
+INFO:2025-10-30 15:05:03,078:Computing HSC features for: P13807, ENST00000323798, ../Ntranos_Rotation/ESM-SaProt/AF-P13807-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:06:47,770:Successfully computed HSC for P13807.
+INFO:2025-10-30 15:06:47,770:Processing P13861 with model AF-P13861-F1-model_v4.pdb
+ERROR:2025-10-30 15:06:47,980:No transcript record found for P13861 in gnomAD.
+INFO:2025-10-30 15:06:47,980:Processing P13866 with model AF-P13866-F1-model_v4.pdb
+INFO:2025-10-30 15:06:48,141:Computing HSC features for: P13866, ENST00000266088, ../Ntranos_Rotation/ESM-SaProt/AF-P13866-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:08:37,487:Successfully computed HSC for P13866.
+INFO:2025-10-30 15:08:37,487:Processing P13928 with model AF-P13928-F1-model_v4.pdb
+ERROR:2025-10-30 15:08:37,653:No transcript record found for P13928 in gnomAD.
+INFO:2025-10-30 15:08:37,653:Pipeline completed.
+INFO:2025-10-30 15:08:37,653:no_enst_for_uniprot: 0
+INFO:2025-10-30 15:08:37,653:no_valid_cds: 0
+INFO:2025-10-30 15:08:37,653:no_variant_data: 2
+INFO:2025-10-30 15:08:37,653:bad_structure: 0
+INFO:2025-10-30 15:08:37,653:no_enst_mp: 0

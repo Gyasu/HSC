@@ -1,0 +1,156 @@
+INFO:2025-10-30 14:59:04,199:Starting HSC computation pipeline...
+INFO:2025-10-30 14:59:58,243:Processing O60507 with model AF-O60507-F1-model_v4.pdb
+INFO:2025-10-30 14:59:58,399:Computing HSC features for: O60507, ENST00000304842, ../Ntranos_Rotation/ESM-SaProt/AF-O60507-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:00:40,516:Successfully computed HSC for O60507.
+INFO:2025-10-30 15:00:40,517:Processing O60508 with model AF-O60508-F1-model_v4.pdb
+INFO:2025-10-30 15:00:40,651:Computing HSC features for: O60508, ENST00000307731, ../Ntranos_Rotation/ESM-SaProt/AF-O60508-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:01:28,257:Successfully computed HSC for O60508.
+INFO:2025-10-30 15:01:28,257:Processing O60512 with model AF-O60512-F1-model_v4.pdb
+INFO:2025-10-30 15:01:28,327:Computing HSC features for: O60512, ENST00000319769, ../Ntranos_Rotation/ESM-SaProt/AF-O60512-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:01:57,225:Successfully computed HSC for O60512.
+INFO:2025-10-30 15:01:57,225:Processing O60513 with model AF-O60513-F1-model_v4.pdb
+INFO:2025-10-30 15:01:57,292:Computing HSC features for: O60513, ENST00000359213, ../Ntranos_Rotation/ESM-SaProt/AF-O60513-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:02:17,788:Successfully computed HSC for O60513.
+INFO:2025-10-30 15:02:17,788:Processing O60516 with model AF-O60516-F1-model_v4.pdb
+INFO:2025-10-30 15:02:17,868:Computing HSC features for: O60516, ENST00000310331, ../Ntranos_Rotation/ESM-SaProt/AF-O60516-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:02:26,784:Successfully computed HSC for O60516.
+INFO:2025-10-30 15:02:26,784:Processing O60518 with model AF-O60518-F1-model_v4.pdb
+INFO:2025-10-30 15:02:26,923:Computing HSC features for: O60518, ENST00000259569, ../Ntranos_Rotation/ESM-SaProt/AF-O60518-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:42,652:Successfully computed HSC for O60518.
+INFO:2025-10-30 15:03:42,652:Processing O60519 with model AF-O60519-F1-model_v4.pdb
+INFO:2025-10-30 15:03:42,717:Computing HSC features for: O60519, ENST00000228865, ../Ntranos_Rotation/ESM-SaProt/AF-O60519-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:03:57,488:Successfully computed HSC for O60519.
+INFO:2025-10-30 15:03:57,489:Processing O60522 with model AF-O60522-F1-model_v4.pdb
+INFO:2025-10-30 15:03:57,890:Computing HSC features for: O60522, ENST00000316081, ../Ntranos_Rotation/ESM-SaProt/AF-O60522-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:06:21,141:Successfully computed HSC for O60522.
+INFO:2025-10-30 15:06:21,141:Processing O60524 with model AF-O60524-F1-model_v4.pdb
+INFO:2025-10-30 15:06:21,336:Computing HSC features for: O60524, ENST00000298310, ../Ntranos_Rotation/ESM-SaProt/AF-O60524-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:07:32,993:Successfully computed HSC for O60524.
+INFO:2025-10-30 15:07:32,994:Processing O60542 with model AF-O60542-F1-model_v4.pdb
+INFO:2025-10-30 15:07:33,068:Computing HSC features for: O60542, ENST00000245810, ../Ntranos_Rotation/ESM-SaProt/AF-O60542-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:07:49,389:Successfully computed HSC for O60542.
+INFO:2025-10-30 15:07:49,389:Processing O60543 with model AF-O60543-F1-model_v4.pdb
+INFO:2025-10-30 15:07:49,440:Computing HSC features for: O60543, ENST00000320477, ../Ntranos_Rotation/ESM-SaProt/AF-O60543-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:08:08,557:Successfully computed HSC for O60543.
+INFO:2025-10-30 15:08:08,557:Processing O60547 with model AF-O60547-F1-model_v4.pdb
+INFO:2025-10-30 15:08:08,631:Computing HSC features for: O60547, ENST00000380815, ../Ntranos_Rotation/ESM-SaProt/AF-O60547-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:08:37,022:Successfully computed HSC for O60547.
+INFO:2025-10-30 15:08:37,022:Processing O60548 with model AF-O60548-F1-model_v4.pdb
+INFO:2025-10-30 15:08:37,149:Computing HSC features for: O60548, ENST00000334793, ../Ntranos_Rotation/ESM-SaProt/AF-O60548-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:09:52,253:Successfully computed HSC for O60548.
+INFO:2025-10-30 15:09:52,254:Processing O60551 with model AF-O60551-F1-model_v4.pdb
+INFO:2025-10-30 15:09:52,357:Computing HSC features for: O60551, ENST00000378165, ../Ntranos_Rotation/ESM-SaProt/AF-O60551-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:10:42,084:Successfully computed HSC for O60551.
+INFO:2025-10-30 15:10:42,084:Processing O60563 with model AF-O60563-F1-model_v4.pdb
+INFO:2025-10-30 15:10:42,228:Computing HSC features for: O60563, ENST00000261900, ../Ntranos_Rotation/ESM-SaProt/AF-O60563-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:11:38,941:Successfully computed HSC for O60563.
+INFO:2025-10-30 15:11:38,941:Processing O60565 with model AF-O60565-F1-model_v4.pdb
+INFO:2025-10-30 15:11:38,997:Computing HSC features for: O60565, ENST00000300177, ../Ntranos_Rotation/ESM-SaProt/AF-O60565-F1-model_v4.pdb.gz
+ERROR:2025-10-30 15:11:39,069:Missing ENST record in counts: ENST00000300177
+INFO:2025-10-30 15:11:39,069:Processing O60566 with model AF-O60566-F1-model_v4.pdb
+INFO:2025-10-30 15:11:39,235:Computing HSC features for: O60566, ENST00000287598, ../Ntranos_Rotation/ESM-SaProt/AF-O60566-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:12:46,037:Successfully computed HSC for O60566.
+INFO:2025-10-30 15:12:46,038:Processing O60568 with model AF-O60568-F1-model_v4.pdb
+INFO:2025-10-30 15:12:46,155:Computing HSC features for: O60568, ENST00000223127, ../Ntranos_Rotation/ESM-SaProt/AF-O60568-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:13:58,427:Successfully computed HSC for O60568.
+INFO:2025-10-30 15:13:58,427:Processing O60573 with model AF-O60573-F1-model_v4.pdb
+INFO:2025-10-30 15:13:58,504:Computing HSC features for: O60573, ENST00000258416, ../Ntranos_Rotation/ESM-SaProt/AF-O60573-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:14:23,978:Successfully computed HSC for O60573.
+INFO:2025-10-30 15:14:23,978:Processing O60575 with model AF-O60575-F1-model_v4.pdb
+INFO:2025-10-30 15:14:24,033:Computing HSC features for: O60575, ENST00000379721, ../Ntranos_Rotation/ESM-SaProt/AF-O60575-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:14:30,081:Successfully computed HSC for O60575.
+INFO:2025-10-30 15:14:30,082:Processing O60583 with model AF-O60583-F1-model_v4.pdb
+INFO:2025-10-30 15:14:30,168:Computing HSC features for: O60583, ENST00000264157, ../Ntranos_Rotation/ESM-SaProt/AF-O60583-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:15:13,338:Successfully computed HSC for O60583.
+INFO:2025-10-30 15:15:13,338:Processing O60602 with model AF-O60602-F1-model_v4.pdb
+INFO:2025-10-30 15:15:13,516:Computing HSC features for: O60602, ENST00000540964, ../Ntranos_Rotation/ESM-SaProt/AF-O60602-F1-model_v4.pdb.gz
+ERROR:2025-10-30 15:15:13,829:Missing ENST record in counts: ENST00000540964
+INFO:2025-10-30 15:15:13,829:Processing O60603 with model AF-O60603-F1-model_v4.pdb
+INFO:2025-10-30 15:15:14,147:Computing HSC features for: O60603, ENST00000260010, ../Ntranos_Rotation/ESM-SaProt/AF-O60603-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:15:58,700:Successfully computed HSC for O60603.
+INFO:2025-10-30 15:15:58,700:Processing O60609 with model AF-O60609-F1-model_v4.pdb
+INFO:2025-10-30 15:15:58,834:Computing HSC features for: O60609, ENST00000274721, ../Ntranos_Rotation/ESM-SaProt/AF-O60609-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:16:31,995:Successfully computed HSC for O60609.
+INFO:2025-10-30 15:16:31,996:Processing O60610 with model AF-O60610-F1-model_v4.pdb
+INFO:2025-10-30 15:16:32,241:Computing HSC features for: O60610, ENST00000389054, ../Ntranos_Rotation/ESM-SaProt/AF-O60610-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:17:58,276:Successfully computed HSC for O60610.
+INFO:2025-10-30 15:17:58,276:Processing O60635 with model AF-O60635-F1-model_v4.pdb
+INFO:2025-10-30 15:17:58,323:Computing HSC features for: O60635, ENST00000372003, ../Ntranos_Rotation/ESM-SaProt/AF-O60635-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:18:13,959:Successfully computed HSC for O60635.
+INFO:2025-10-30 15:18:13,959:Processing O60636 with model AF-O60636-F1-model_v4.pdb
+INFO:2025-10-30 15:18:14,006:Computing HSC features for: O60636, ENST00000369516, ../Ntranos_Rotation/ESM-SaProt/AF-O60636-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:18:45,151:Successfully computed HSC for O60636.
+INFO:2025-10-30 15:18:45,152:Processing O60637 with model AF-O60637-F1-model_v4.pdb
+INFO:2025-10-30 15:18:45,217:Computing HSC features for: O60637, ENST00000267970, ../Ntranos_Rotation/ESM-SaProt/AF-O60637-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:19:14,517:Successfully computed HSC for O60637.
+INFO:2025-10-30 15:19:14,517:Processing O60641 with model AF-O60641-F1-model_v4.pdb
+INFO:2025-10-30 15:19:14,777:Computing HSC features for: O60641, ENST00000369694, ../Ntranos_Rotation/ESM-SaProt/AF-O60641-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:20:50,275:Successfully computed HSC for O60641.
+INFO:2025-10-30 15:20:50,275:Processing O60645 with model AF-O60645-F1-model_v4.pdb
+INFO:2025-10-30 15:20:50,414:Computing HSC features for: O60645, ENST00000315013, ../Ntranos_Rotation/ESM-SaProt/AF-O60645-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:21:56,568:Successfully computed HSC for O60645.
+INFO:2025-10-30 15:21:56,568:Processing O60656 with model AF-O60656-F1-model_v4.pdb
+INFO:2025-10-30 15:21:56,979:Computing HSC features for: O60656, ENST00000354728, ../Ntranos_Rotation/ESM-SaProt/AF-O60656-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:22:31,404:Successfully computed HSC for O60656.
+INFO:2025-10-30 15:22:31,404:Processing O60658 with model AF-O60658-F1-model_v4.pdb
+INFO:2025-10-30 15:22:31,804:Computing HSC features for: O60658, ENST00000310298, ../Ntranos_Rotation/ESM-SaProt/AF-O60658-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:24:16,308:Successfully computed HSC for O60658.
+INFO:2025-10-30 15:24:16,308:Processing O60662 with model AF-O60662-F1-model_v4.pdb
+INFO:2025-10-30 15:24:16,419:Computing HSC features for: O60662, ENST00000284669, ../Ntranos_Rotation/ESM-SaProt/AF-O60662-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:24:56,638:Successfully computed HSC for O60662.
+INFO:2025-10-30 15:24:56,638:Processing O60663 with model AF-O60663-F1-model_v4.pdb
+INFO:2025-10-30 15:24:56,745:Computing HSC features for: O60663, ENST00000373474, ../Ntranos_Rotation/ESM-SaProt/AF-O60663-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:26:14,027:Successfully computed HSC for O60663.
+INFO:2025-10-30 15:26:14,027:Processing O60664 with model AF-O60664-F1-model_v4.pdb
+INFO:2025-10-30 15:26:14,110:Computing HSC features for: O60664, ENST00000221957, ../Ntranos_Rotation/ESM-SaProt/AF-O60664-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:27:26,956:Successfully computed HSC for O60664.
+INFO:2025-10-30 15:27:26,957:Processing O60667 with model AF-O60667-F1-model_v4.pdb
+INFO:2025-10-30 15:27:27,015:Computing HSC features for: O60667, ENST00000367091, ../Ntranos_Rotation/ESM-SaProt/AF-O60667-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:27:57,490:Successfully computed HSC for O60667.
+INFO:2025-10-30 15:27:57,491:Processing O60669 with model AF-O60669-F1-model_v4.pdb
+INFO:2025-10-30 15:27:57,593:Computing HSC features for: O60669, ENST00000261187, ../Ntranos_Rotation/ESM-SaProt/AF-O60669-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:28:48,597:Successfully computed HSC for O60669.
+INFO:2025-10-30 15:28:48,597:Processing O60671 with model AF-O60671-F1-model_v4.pdb
+INFO:2025-10-30 15:28:48,740:Computing HSC features for: O60671, ENST00000341754, ../Ntranos_Rotation/ESM-SaProt/AF-O60671-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:29:11,876:Successfully computed HSC for O60671.
+INFO:2025-10-30 15:29:11,876:Processing O60673 with model AF-O60673-F1-model_v4.pdb
+ERROR:2025-10-30 15:29:12,018:No valid CDS found for O60673
+INFO:2025-10-30 15:29:12,018:Processing O60674 with model AF-O60674-F1-model_v4.pdb
+INFO:2025-10-30 15:29:12,215:Computing HSC features for: O60674, ENST00000381652, ../Ntranos_Rotation/ESM-SaProt/AF-O60674-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:30:26,646:Successfully computed HSC for O60674.
+INFO:2025-10-30 15:30:26,646:Processing O60675 with model AF-O60675-F1-model_v4.pdb
+INFO:2025-10-30 15:30:26,700:Computing HSC features for: O60675, ENST00000343242, ../Ntranos_Rotation/ESM-SaProt/AF-O60675-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:30:45,167:Successfully computed HSC for O60675.
+INFO:2025-10-30 15:30:45,167:Processing O60676 with model AF-O60676-F1-model_v4.pdb
+INFO:2025-10-30 15:30:45,227:Computing HSC features for: O60676, ENST00000246012, ../Ntranos_Rotation/ESM-SaProt/AF-O60676-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:30:54,366:Successfully computed HSC for O60676.
+INFO:2025-10-30 15:30:54,366:Processing O60678 with model AF-O60678-F1-model_v4.pdb
+INFO:2025-10-30 15:30:54,466:Computing HSC features for: O60678, ENST00000331079, ../Ntranos_Rotation/ESM-SaProt/AF-O60678-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:31:44,313:Successfully computed HSC for O60678.
+INFO:2025-10-30 15:31:44,314:Processing O60682 with model AF-O60682-F1-model_v4.pdb
+INFO:2025-10-30 15:31:44,558:Computing HSC features for: O60682, ENST00000325509, ../Ntranos_Rotation/ESM-SaProt/AF-O60682-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:32:09,896:Successfully computed HSC for O60682.
+INFO:2025-10-30 15:32:09,896:Processing O60683 with model AF-O60683-F1-model_v4.pdb
+INFO:2025-10-30 15:32:10,080:Computing HSC features for: O60683, ENST00000447513, ../Ntranos_Rotation/ESM-SaProt/AF-O60683-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:32:43,549:Successfully computed HSC for O60683.
+INFO:2025-10-30 15:32:43,549:Processing O60684 with model AF-O60684-F1-model_v4.pdb
+INFO:2025-10-30 15:32:43,668:Computing HSC features for: O60684, ENST00000373625, ../Ntranos_Rotation/ESM-SaProt/AF-O60684-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:33:26,165:Successfully computed HSC for O60684.
+INFO:2025-10-30 15:33:26,166:Processing O60687 with model AF-O60687-F1-model_v4.pdb
+INFO:2025-10-30 15:33:26,249:Computing HSC features for: O60687, ENST00000373004, ../Ntranos_Rotation/ESM-SaProt/AF-O60687-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:34:25,627:Successfully computed HSC for O60687.
+INFO:2025-10-30 15:34:25,627:Processing O60688 with model AF-O60688-F1-model_v4.pdb
+INFO:2025-10-30 15:34:25,671:Computing HSC features for: O60688, ENST00000339468, ../Ntranos_Rotation/ESM-SaProt/AF-O60688-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:34:36,314:Successfully computed HSC for O60688.
+INFO:2025-10-30 15:34:36,315:Processing O60701 with model AF-O60701-F1-model_v4.pdb
+INFO:2025-10-30 15:34:36,411:Computing HSC features for: O60701, ENST00000316423, ../Ntranos_Rotation/ESM-SaProt/AF-O60701-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:35:20,611:Successfully computed HSC for O60701.
+INFO:2025-10-30 15:35:20,611:Processing O60704 with model AF-O60704-F1-model_v4.pdb
+INFO:2025-10-30 15:35:20,707:Computing HSC features for: O60704, ENST00000338754, ../Ntranos_Rotation/ESM-SaProt/AF-O60704-F1-model_v4.pdb.gz
+INFO:2025-10-30 15:35:58,095:Successfully computed HSC for O60704.
+INFO:2025-10-30 15:35:58,095:Pipeline completed.
+INFO:2025-10-30 15:35:58,095:no_enst_for_uniprot: 0
+INFO:2025-10-30 15:35:58,095:no_valid_cds: 1
+INFO:2025-10-30 15:35:58,095:no_variant_data: 0
+INFO:2025-10-30 15:35:58,095:bad_structure: 0
+INFO:2025-10-30 15:35:58,095:no_enst_mp: 2
