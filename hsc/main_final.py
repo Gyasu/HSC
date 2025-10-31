@@ -196,6 +196,8 @@ def count_variants(variants):
             result = 1 - MAF
         else:
             result = MAF
+        
+        result_log = np.log10(result + 1)
                 
         w = vv[0]  # wild-type amino acid
         v = vv[-1]  # mutant amino acid
@@ -203,9 +205,9 @@ def count_variants(variants):
         
 
         if w != v:  # missense variant
-            missense_counts[int(pos)] += result
+            missense_counts[int(pos)] += result_log
         else:  # synonymous variant
-            synonymous_counts[int(pos)] += result
+            synonymous_counts[int(pos)] += result_log
     return missense_counts, synonymous_counts
 
 class NoValidCDSError(ValueError):

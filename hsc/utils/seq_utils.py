@@ -239,7 +239,7 @@ def permute_variants_dist(m, length, p=None, dist=None, n=10000):
             else:
                 result = MAF
 
-            result_log = np.log10(result)
+            result_log = np.log10(result + 1)
             
 
             v[s] += result_log
