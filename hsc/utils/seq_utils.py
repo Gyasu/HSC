@@ -237,12 +237,9 @@ def permute_variants_dist(m, length, p=None, dist=None, n=10000):
             if MAF > 0.5:
                 result = 1 - MAF
             else:
-                result = MAF
+                result = MAF            
 
-            result_log = np.log10(result + 1)
-            
-
-            v[s] += result_log
+            v[s] += result
 
         missense_matrix.append(v)
     return np.stack(missense_matrix)

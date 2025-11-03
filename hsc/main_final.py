@@ -196,18 +196,16 @@ def count_variants(variants):
             result = 1 - MAF
         else:
             result = MAF
-        
-        result_log = np.log10(result + 1)
-                
+                        
         w = vv[0]  # wild-type amino acid
         v = vv[-1]  # mutant amino acid
         pos = vv[1:-1]  # position in the protein sequence
         
 
         if w != v:  # missense variant
-            missense_counts[int(pos)] += result_log
+            missense_counts[int(pos)] += result
         else:  # synonymous variant
-            synonymous_counts[int(pos)] += result_log
+            synonymous_counts[int(pos)] += result
     return missense_counts, synonymous_counts
 
 def retrieve_data(pep_seq, uniprot_id, enst_ids, cds_dict, variant_dict):
