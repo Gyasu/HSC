@@ -577,6 +577,10 @@ def main():
                 syn_pmt_matrix, contacts_pdb_pos + [seq_pos], total_synonymous_obs
             )
 
+            z_score = (total_missense_obs - mis_pmt_mean) / mis_pmt_sd
+
+            hscz = np.sign(z_score) * np.log10(np.abs(z_score) + 1)
+
             # compute the fraction of expected missense variants
             hsc_scores.append(
                 [
@@ -595,7 +599,7 @@ def main():
                     total_missense_obs,
                     mis_pmt_mean,
                     mis_pmt_sd,
-                    '{:.3f}'.format((total_missense_obs - mis_pmt_mean) / mis_pmt_sd),  
+                    '{:.3f}'.format(hscz),  
                     '{:.3e}'.format(mis_p_value),
                     '{:.3f}'.format(syn_pmt_mean),
                     '{:.3f}'.format(syn_pmt_sd),
