@@ -210,18 +210,6 @@ def count_variants(variants):
             synonymous_counts[int(pos)] += result_log
     return missense_counts, synonymous_counts
 
-class NoValidCDSError(ValueError):
-    pass
-
-class NoTranscriptRecordError(KeyError):
-    pass
-
-class NoRecordInDictionaryError(KeyError):
-    pass
-
-class NoVariantsError(KeyError):
-    pass
-
 def retrieve_data(pep_seq, uniprot_id, enst_ids, cds_dict, variant_dict):
     """
     Retrieve the coding sequence (CDS) and variant information for a given 
@@ -583,9 +571,6 @@ def main():
                 print('No nucleotides were found in sequence context!')
                 continue
             gc_fraction = seq_utils.gc_content(seq_context)
-
-            total_missense_obs = np.log10(total_missense_obs + 1e-12)
-            total_synonymous_obs = np.log10(total_synonymous_obs + 1e-12)
 
             mis_pmt_mean, mis_pmt_sd, mis_p_value = seq_utils.get_permutation_stats(
                 mis_pmt_matrix, contacts_pdb_pos + [seq_pos], total_missense_obs
