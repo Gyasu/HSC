@@ -570,16 +570,22 @@ def main():
                 continue
             gc_fraction = seq_utils.gc_content(seq_context)
 
-            mis_pmt_mean, mis_pmt_sd, mis_p_value = seq_utils.get_permutation_stats(
-                mis_pmt_matrix, contacts_pdb_pos + [seq_pos], total_missense_obs
+            total_missense_obs_log = np.log10(total_missense_obs)
+            total_synonymous_obs_log = np.log10(total_synonymous_obs)
+
+
+            mis_pmt_mean, mis_pmt_sd, mis_p_value = seq_utils.get_permutation_stats_log(
+                mis_pmt_matrix, contacts_pdb_pos + [seq_pos], total_missense_obs_log
             )
-            syn_pmt_mean, syn_pmt_sd, syn_p_value = seq_utils.get_permutation_stats(
-                syn_pmt_matrix, contacts_pdb_pos + [seq_pos], total_synonymous_obs
+            syn_pmt_mean, syn_pmt_sd, syn_p_value = seq_utils.get_permutation_stats_log(
+                syn_pmt_matrix, contacts_pdb_pos + [seq_pos], total_synonymous_obs_log
             )
 
-            z_score = (total_missense_obs - mis_pmt_mean) / mis_pmt_sd
 
-            hscz = np.sign(z_score) * np.log10(np.abs(z_score) + 1)
+            z_score = (total_missense_obs_log - mis_pmt_mean) / mis_pmt_sd
+
+            # hscz = np.sign(z_score) * np.log10(np.abs(z_score) + 1)
+            hscz = z_score
 
             # compute the fraction of expected missense variants
             hsc_scores.append(

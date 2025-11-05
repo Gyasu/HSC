@@ -90,69 +90,33 @@ def get_permutation_stats(pmt_matrix, cs_sites, n_obs):
 
 def get_permutation_stats_log(pmt_matrix, cs_sites, n_obs):
     """
+
     Parameters
     ----------
-    pmt_matrix : np.ndarray or dict
-        If ndarray: shape (n_permutations, n_residues).
-        If dict: keys are chain ids and values are arrays shape (n_permutations, n_residues_for_chain).
+    pmt_matrix
     cs_sites : list
-        List of residue objects (if dict case) or 1-based residue indices (if ndarray case).
-    n_obs : int or float
-        Observed value (sum over contacts) for which we want p-value / z-scores.
+    n_obs : int
 
     Returns
     -------
-    pmt_mean : float
-        Mean of permutation distribution (raw scale).
-    pmt_sd : float
-        SD of permutation distribution (raw scale).
-    p_value : float
-        Empirical p-value from permutations.
-    mean_log10 : float
-        Mean of log10-transformed permutation values.
-    sd_log10 : float
-        SD of log10-transformed permutation values.
-    z_log10_obs : float
-        Z-score of observed value on the log10 scale.
+
     """
-    # Build pmt (permutation sums)
     if not isinstance(pmt_matrix, dict):
         contact_res_indices = [pos - 1 for pos in cs_sites]
         pmt = pmt_matrix[:, contact_res_indices].sum(axis=1)
     else:
-        pmt = None
+        pmt = 0
         for res in cs_sites:
             chain_id = res.get_full_id()[2]
             res_index = res.get_full_id()[3][1] - 1
-            if pmt is None:
-                pmt = pmt_matrix[chain_id][:, res_index].copy()
-            else:
-                pmt += pmt_matrix[chain_id][:, res_index]
-        if pmt is None:
-            first_chain = next(iter(pmt_matrix))
-            pmt = np.zeros(pmt_matrix[first_chain].shape[0], dtype=float)
-
-    # Raw stats
-    pmt_mean = np.mean(pmt)
-    pmt_sd = np.std(pmt, ddof=0)
-
-    # Empirical p-value
-    n = np.sum(pmt <= n_obs)
-    n_permutations = pmt.shape[0]
-    p_value = (n + 1) / (n_permutations + 1)
-
-    # Log10-transform stats (+1 to avoid log(0))
-    log_pmt = np.log10(pmt + 1)
-    mean_log10 = np.mean(log_pmt)
-    sd_log10 = np.std(log_pmt, ddof=0)
-
-    # Z-score of observed value on log10 scale
-    if sd_log10 == 0:
-        z_log10_obs = np.nan
-    else:
-        z_log10_obs = (np.log10(n_obs + 1) - mean_log10) / sd_log10
-
-    return pmt_mean, pmt_sd, p_value, mean_log10, sd_log10, z_log10_obs
+            pmt += pmt_matrix[chain_id][:, res_index]
+    
+    pmt_log = np.log10(pmt + 1)
+    pmt_mean = np.mean(pmt_log)
+    pmt_sd = np.std(pmt_log)
+    n = np.sum(pmt_log <= n_obs)
+    p_value = (n + 1) / 10001
+    return pmt_mean, pmt_sd, p_value
 
 
 def get_codon_seq_context(codon_nums, cds):
