@@ -15,3 +15,5 @@ helper_scripts/hsc_11_all_pvals.txt
 helper_scripts/hsc_14_all_pvals.txt
 helper_scripts/context_clinvar_with_HSCZ.csv
 helper_scripts/context_clinvar_with_HSCZ2.csv
+helper_scripts/all_conservation_scores_with_CS_8.csv
+helper_scripts/all_conservation_scores_with_HSCZ_8.csv

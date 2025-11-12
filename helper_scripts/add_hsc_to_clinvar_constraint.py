@@ -6,7 +6,7 @@ from tqdm import tqdm
 # File paths
 # -----------------------------
 clinvar_path = 'context_clinvar_with_HSCZ.csv'
-hsc_dir = '../outputs/HSC_14'
+hsc_dir = '../outputs/HSC_2'
 
 # -----------------------------
 # Load ClinVar + Context Data
@@ -19,7 +19,7 @@ clinvar_df = pd.read_csv(clinvar_path)
 # clinvar_df = clinvar_df.drop(columns=[c for c in cols_to_drop if c in clinvar_df.columns], errors='ignore')
 
 # Add an empty column to hold HSCZ_2 scores
-clinvar_df['HSCZ_14'] = pd.NA
+clinvar_df['total_obs_af'] = pd.NA
 
 # Ensure uniprot_pos is string for matching
 clinvar_df['uniprot_pos'] = clinvar_df['uniprot_pos'].astype(str)
@@ -59,8 +59,8 @@ for idx, row in tqdm(clinvar_df.iterrows(), total=clinvar_df.shape[0], desc="Ann
     ]
 
     # Assign score if found
-    if not match.empty and 'HSCZ' in match.columns:
-        clinvar_df.at[idx, 'HSCZ_14'] = match['HSCZ'].values[0]
+    if not match.empty and 'log_cs_mis_obs' in match.columns:
+        clinvar_df.at[idx, 'total_obs_af'] = match['log_cs_mis_obs'].values[0]
     # Optionally log missing matches
     # else:
     #     print(f"No match for {uniprot_id}:{ref_aa}{position}")
