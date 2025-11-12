@@ -19,9 +19,9 @@ conda activate constraintometer
 i=$SGE_TASK_ID
 
 input_file="all_uniprots/split_${i}.txt"
-log_file="hsc8_${i}.log"
+log_file="hsc14_${i}.log"
 
-python hsc/main_final.py -c config.json -i $input_file -l $log_file -r 8
+python hsc/main_final.py -c config.json -i $input_file -l $log_file -r 14
 
 
 [[ -n "$JOB_ID" ]] && qstat -j "$JOB_ID"

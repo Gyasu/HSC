@@ -25,7 +25,8 @@ dependencies = [
 	"matplotlib",
 	"plotly",
 	"biopython",  
-	"tqdm"        
+	"tqdm",
+	"statsmodels"        
 ]
 
 [project.urls]
