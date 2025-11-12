@@ -2,3 +2,8 @@ scripts/
 outputs/
 all_uniprots/
 datafiles/
+helper_scripts/hsc_2_all_scores.txt
+helper_scripts/hsc_5_all_scores.txt
+helper_scripts/hsc_8_all_scores.txt
+helper_scripts/hsc_11_all_scores.txt
+helper_scripts/hsc_15_all_scores.txt
