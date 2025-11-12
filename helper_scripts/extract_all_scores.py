@@ -2,8 +2,8 @@ import os
 import pandas as pd
 from tqdm import tqdm
 
-output_dir = '../outputs/HSC_11'
-output_file = 'hsc_11_all_scores.txt'
+output_dir = '../outputs/HSC_14'
+output_file = 'hsc_14_all_scores.txt'
 
 hsc_scores = []
 

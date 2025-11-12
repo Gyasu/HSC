@@ -6,4 +6,5 @@ helper_scripts/hsc_2_all_scores.txt
 helper_scripts/hsc_5_all_scores.txt
 helper_scripts/hsc_8_all_scores.txt
 helper_scripts/hsc_11_all_scores.txt
-helper_scripts/hsc_15_all_scores.txt
+helper_scripts/hsc_14_all_scores.txt
+helper_scripts/gene_set_scores_HSC_8.tsv
