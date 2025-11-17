@@ -3,7 +3,7 @@ import pandas as pd
 from tqdm import tqdm
 
 # ===== USER INPUTS =====
-input_csv = "all_conservation_scores_with_CS_8.csv"              # main CSV file with uniprot_id, uniprot_pos
+input_csv = "all_conservation_scores_with_HSCZ_8.csv"              # main CSV file with uniprot_id, uniprot_pos
 hsc_dir = "../outputs/HSC_8"     # directory containing {uniprot_id}_hsc.tsv
 output_csv = "all_conservation_scores_with_HSCZ_8.csv"   # output file
 
@@ -32,12 +32,12 @@ for uniprot_id, sub_df in tqdm(df.groupby("uniprot_id"), desc="Processing protei
     except Exception as e:
         print(f"Error reading {hsc_file}: {e}")
         continue
-
+    
     # Merge on uniprot_pos
     merged = sub_df.merge(hsc_df, on="uniprot_pos", how="left", suffixes=("", "_new"))
 
     # Assign matched scores back to main df
-    df.loc[merged.index, "HSCZ"] = merged["HSCZ_new"].values
+    df.loc[sub_df.index, "HSCZ"] = merged["HSCZ_new"].values
 
 # ===== SAVE OUTPUT =====
 df.to_csv(output_csv, index=False)
