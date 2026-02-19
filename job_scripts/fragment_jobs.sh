@@ -5,7 +5,7 @@
 #$ -j y
 #$ -l mem_free=16G
 #$ -l scratch=48G
-#$ -l h_rt=2:00:00
+#$ -l h_rt=4:00:00
 #$ -t 1-411
 
 date
@@ -19,9 +19,9 @@ conda activate constraintometer
 i=$SGE_TASK_ID
 
 input_file="all_uniprots/split_${i}.txt"
-log_file="hsc14_${i}.log"
+log_file="husc_logs/husc_${i}.log"
 
-python hsc/main_final.py -c config.json -i $input_file -l $log_file -r 14
 
+python husc/main.py -c config.json -i $input_file -l $log_file -r 14
 
 [[ -n "$JOB_ID" ]] && qstat -j "$JOB_ID"

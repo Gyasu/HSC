@@ -3,71 +3,72 @@ import os
 from tqdm import tqdm
 
 # -----------------------------
-# File paths
+# Paths
 # -----------------------------
-clinvar_path = 'context_clinvar_with_HSCZ.csv'
-hsc_dir = '../outputs/HSC_2'
-
-# -----------------------------
-# Load ClinVar + Context Data
-# -----------------------------
-clinvar_df = pd.read_csv(clinvar_path)
-
-# Drop previous HSC or COSMIS-related columns if present
-# cols_to_drop = ['cosmis-af', 'cosmis-af-z', 'cosmis-afz', 
-#                 'HSCZ_2', 'HSCZ_5', 'HSCZ_8', 'HSCZ_11', 'HSCZ_14']
-# clinvar_df = clinvar_df.drop(columns=[c for c in cols_to_drop if c in clinvar_df.columns], errors='ignore')
-
-# Add an empty column to hold HSCZ_2 scores
-clinvar_df['total_obs_af'] = pd.NA
-
-# Ensure uniprot_pos is string for matching
-clinvar_df['uniprot_pos'] = clinvar_df['uniprot_pos'].astype(str)
+CLINVAR_PATH = "context_clinvar_with_HuSC.csv"
+HUSC_DIR = "../outputs/HuSC_14"
+OUTPUT_PATH = "context_clinvar_with_HuSC.csv"
 
 # -----------------------------
-# Map HSC scores into ClinVar table
+# Load ClinVar data
 # -----------------------------
-for idx, row in tqdm(clinvar_df.iterrows(), total=clinvar_df.shape[0], desc="Annotating HSC scores"):
-    uniprot_id = row['uniprot_id']
-    ref_aa = row['uniprot_aa']
-    position = row['uniprot_pos']
+clinvar_df = pd.read_csv(CLINVAR_PATH)
 
-    # Expected file name pattern
-    hsc_file = f"{uniprot_id}_hsc.tsv"
-    hsc_path = os.path.join(hsc_dir, hsc_file)
+# Remove old columns if re-running
+cols_to_drop = [c for c in clinvar_df.columns if c.lower().startswith("hsc")]
+clinvar_df = clinvar_df.drop(columns=cols_to_drop, errors="ignore")
 
-    # Load corresponding file
+# Initialize HuSC column
+clinvar_df["HuSC_14"] = pd.NA
+
+# Ensure consistent dtypes
+clinvar_df["uniprot_pos"] = clinvar_df["uniprot_pos"].astype(str)
+
+# -----------------------------
+# Preload all HuSC files
+# -----------------------------
+husc_lookup = {}
+
+for fname in tqdm(os.listdir(HUSC_DIR), desc="Loading HuSC files"):
+    if not fname.endswith("_husc.tsv"):
+        continue
+
+    uniprot_id = fname.replace("_husc.tsv", "")
+    fpath = os.path.join(HUSC_DIR, fname)
+
     try:
-        hsc_df = pd.read_csv(hsc_path, sep='\t')
-    except FileNotFoundError:
-        # No file for this protein
-        continue
-    except pd.errors.EmptyDataError:
-        print(f"⚠️ Empty file: {hsc_path}")
-        continue
+        df = pd.read_csv(fpath, sep="\t")
     except Exception as e:
-        print(f"⚠️ Error reading {hsc_path}: {e}")
+        print(f"⚠️ Skipping {fname}: {e}")
         continue
 
-    # Make sure position is string for matching
-    hsc_df['uniprot_pos'] = hsc_df['uniprot_pos'].astype(str)
+    if "HuSC" not in df.columns:
+        continue
 
-    # Find matching row (same AA + same position)
-    match = hsc_df[
-        (hsc_df['uniprot_aa'] == ref_aa) &
-        (hsc_df['uniprot_pos'] == position)
-    ]
+    df["uniprot_pos"] = df["uniprot_pos"].astype(str)
 
-    # Assign score if found
-    if not match.empty and 'log_cs_mis_obs' in match.columns:
-        clinvar_df.at[idx, 'total_obs_af'] = match['log_cs_mis_obs'].values[0]
-    # Optionally log missing matches
-    # else:
-    #     print(f"No match for {uniprot_id}:{ref_aa}{position}")
+    # Build lookup: (AA, pos) → HuSC
+    husc_lookup[uniprot_id] = {
+        (row.uniprot_aa, row.uniprot_pos): row.HuSC
+        for row in df.itertuples(index=False)
+    }
 
 # -----------------------------
-# Save updated file
+# Annotate ClinVar
 # -----------------------------
-output_path = 'context_clinvar_with_HSCZ.csv'
-clinvar_df.to_csv(output_path, index=False)
-print(f"\n✅ Annotated ClinVar table saved to: {output_path}")
+for idx, row in tqdm(
+    clinvar_df.iterrows(),
+    total=len(clinvar_df),
+    desc="Annotating HuSC scores"
+):
+    uniprot_id = row.uniprot_id
+    key = (row.uniprot_aa, row.uniprot_pos)
+
+    if uniprot_id in husc_lookup:
+        clinvar_df.at[idx, "HuSC_14"] = husc_lookup[uniprot_id].get(key)
+
+# -----------------------------
+# Save result
+# -----------------------------
+clinvar_df.to_csv(OUTPUT_PATH, index=False)
+print(f"\n✅ Annotated ClinVar table saved to: {OUTPUT_PATH}")

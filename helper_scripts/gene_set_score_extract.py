@@ -21,7 +21,7 @@ class_dict = {
 }
 
 # Directory containing HSC files
-hsc_8_dir = '../outputs/HSC_8'
+husc_8_dir = '../outputs/HuSC_8'
 
 # Collect results here
 dfs = []
@@ -31,17 +31,17 @@ for gene_class, path in class_dict.items():
     gene_set_df = pd.read_csv(path, sep='\t', header=0)
     
     for uniprot_id in tqdm(gene_set_df['uniprot_id'], desc=f"Processing {gene_class}"):
-        hsc_file = os.path.join(hsc_8_dir, f"{uniprot_id}_hsc.tsv")
+        hsc_file = os.path.join(husc_8_dir, f"{uniprot_id}_husc.tsv")
         
         if os.path.exists(hsc_file):
             hsc_df = pd.read_csv(hsc_file, sep='\t', header=0)
             
             # Skip if HSCZ column missing or file empty
-            if 'HSCZ' not in hsc_df.columns or hsc_df.empty:
+            if 'HuSC' not in hsc_df.columns or hsc_df.empty:
                 continue
 
             # Keep only the desired column and add identifiers
-            subset_df = hsc_df[['HSCZ']].copy()
+            subset_df = hsc_df[['HuSC']].copy()
             subset_df['uniprot_id'] = uniprot_id
             subset_df['class'] = gene_class
 
@@ -51,9 +51,9 @@ for gene_class, path in class_dict.items():
 final_df = pd.concat(dfs, ignore_index=True)
 
 # Reorder columns
-final_df = final_df[['uniprot_id', 'HSCZ', 'class']]
+final_df = final_df[['uniprot_id', 'HuSC', 'class']]
 
 # Save combined results
-final_df.to_csv('gene_set_scores_HSC_8.tsv', sep='\t', index=False)
+final_df.to_csv('gene_set_scores_HuSC_8.tsv', sep='\t', index=False)
 
 print(f"Combined DataFrame shape: {final_df.shape}")

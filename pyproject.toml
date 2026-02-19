@@ -30,4 +30,4 @@ dependencies = [
 ]
 
 [project.urls]
-Home = "https://github.com/gyasu/HSC.git"
+Home = "https://github.com/gyasu/HuSC.git"
